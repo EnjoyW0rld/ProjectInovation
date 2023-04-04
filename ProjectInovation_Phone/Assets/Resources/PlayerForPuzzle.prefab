@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8786888704091618990}
   - component: {fileID: -5586392890393828415}
+  - component: {fileID: 4679276719345958721}
   m_Layer: 0
   m_Name: PlayerForPuzzle
   m_TagString: Untagged
@@ -54,3 +55,15 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &4679276719345958721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424438769966301262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f348369e9f1b5ee478ad885255215d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

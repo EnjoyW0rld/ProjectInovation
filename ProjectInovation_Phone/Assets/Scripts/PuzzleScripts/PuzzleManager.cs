@@ -6,15 +6,18 @@ using Photon.Pun;
 public class PuzzleManager : MonoBehaviour
 {
     private PlayerData playerData;
+    private PhotonView view;
+
+
 
     void Awake()
     {
-        PhotonNetwork.Instantiate("PlayerForPuzzle", Vector3.zero, Quaternion.identity);
+        view = PhotonNetwork.Instantiate("PlayerForPuzzle", Vector3.zero, Quaternion.identity).GetComponent<PhotonView>();
         Debug.Log(UserPrivateData.Instance.GetRole());
     }
     private void Start()
     {
-        Debug.Log(playerData.GetRole());
+        view.RPC("Ping", RpcTarget.All, "meme");
     }
     
 }
