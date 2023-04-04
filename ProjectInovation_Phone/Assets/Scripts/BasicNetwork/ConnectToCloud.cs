@@ -9,6 +9,7 @@ public class ConnectToCloud : MonoBehaviourPunCallbacks
 {
     void Start()
     {
+        PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.ConnectUsingSettings();
     }
 

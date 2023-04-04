@@ -50,6 +50,7 @@ public class CharacterManager : MonoBehaviour
         {
             if (role == _characterSprites[i].role)
             {
+                UserPrivateData.Instance.SetRole(role);
                 OnSelected?.Invoke(_characterSprites[i]);
                 break;
             }

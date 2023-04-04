@@ -21,7 +21,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
         myView = PhotonNetwork.Instantiate("Player", Vector3.zero, Quaternion.identity).GetComponent<PlayerData>();
         //myView.GetComponent<PlayerData>().SetId(PhotonNetwork.CurrentRoom.PlayerCount - 1);// = PhotonNetwork.ViewCount + 1;
         myView.Initialize(PhotonNetwork.CurrentRoom.PlayerCount - 1, myView.GetComponent<PhotonView>());
-        
+        UserPrivateData.Instance.Initialize(myView.ID);
 
         roomName.text = "Room: " + PhotonNetwork.CurrentRoom.Name;
         selectionScreen.GetComponent<CharacterManager>().OnSelected.AddListener(OnCharacterSelected);
@@ -29,8 +29,9 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.G))
-        myView.View.RPC("UpdateCharacter", RpcTarget.All,1);
+        if (Input.GetKeyDown(KeyCode.G) && PhotonNetwork.IsMasterClient)
+            PhotonNetwork.LoadLevel("GameScreen");
+        //myView.View.RPC("UpdateCharacter", RpcTarget.All,1);
         
     }
     private void OnCharacterSelected(RoleSprites role)
@@ -54,6 +55,10 @@ public class RoomManager : MonoBehaviourPunCallbacks
     //Get functions
     public int GetID() => myView.GetComponent<PlayerData>().ID;
     public PlayerData GetPlayerData() => myView;
+    public void StartGame()
+    {
+        PhotonNetwork.LoadLevel("GameScreen");
+    }
 
 }
 

@@ -10,12 +10,11 @@ public class RPC_commands : MonoBehaviour
 
 
     private ReadyHandler readyHandler;
+
     [PunRPC]
     private void UpdateSprite(int ID, int role)
     {
-        if (readyHandler == null) readyHandler = FindObjectOfType<ReadyHandler>();
+        if (readyHandler == null) readyHandler = FindObjectOfType<ReadyHandler>(true);
         readyHandler.SetImage(ID, SpritePool.Instance.GetSpriteByRole((CharacterManager.Roles)role));
-        //OnReadyChange?.Invoke(ID, SpritePool.Instance.GetSpriteByRole((CharacterManager.Roles)role), false);
-        print("Invoked");
     }
 }
