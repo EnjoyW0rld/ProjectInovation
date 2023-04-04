@@ -19,7 +19,8 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     }
     public override void OnJoinedRoom()
     {
-        PhotonNetwork.LoadLevel("GameRoom");
+            //PhotonNetwork.Instantiate("Player", Vector3.zero, Quaternion.identity);
+        PhotonNetwork.LoadLevel("LobbyRoom");
     }
 
     public static string GenerateRandomString()
