@@ -16,7 +16,7 @@ public class ReadyHandler : MonoBehaviour
         id = roomManager.GetID();
         for (int i = 0; i < cards.Length; i++)
         {
-            if (i != id) cards[i].Deselect();
+            //if (i != id) cards[i].Deselect();
         }
     }
     private void OnEnable()
@@ -33,5 +33,13 @@ public class ReadyHandler : MonoBehaviour
     {
         print("Changing sprite for" + id);
         cards[id].SetImage(image);
+    }
+    public void OnReadyPressed()
+    {
+        roomManager.GetPlayerData().View.RPC("UpdateReady", RpcTarget.All, roomManager.GetID());
+    }
+    public void UpdateReady(int id)
+    {
+        cards[id].ChangeReady();
     }
 }

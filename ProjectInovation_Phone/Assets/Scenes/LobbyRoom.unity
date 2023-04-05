@@ -395,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27456623d36f634c9175cf71c17e7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1746183229}
+  image: {fileID: 759039143}
   button: {fileID: 900565222}
 --- !u!1 &279493186
 GameObject:
@@ -517,7 +517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 200.00505}
+  m_AnchoredPosition: {x: 0, y: 200.00507}
   m_SizeDelta: {x: 509.05, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &317827555
@@ -1216,6 +1216,7 @@ GameObject:
   - component: {fileID: 731973635}
   - component: {fileID: 731973637}
   - component: {fileID: 731973636}
+  - component: {fileID: 731973638}
   m_Layer: 5
   m_Name: TVbutton
   m_TagString: Untagged
@@ -1281,6 +1282,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731973634}
   m_CullTransparentMesh: 1
+--- !u!114 &731973638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731973634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe710a050bb22c94898fe25a0d1b714d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lights:
+  - {fileID: 21300000, guid: a33255f5b48bcd24683e2837d7a2cda3, type: 3}
+  - {fileID: 21300000, guid: 8b86fd9f066c62f4aae48d9f8dbfa1df, type: 3}
+  - {fileID: 21300000, guid: c5eee0fe706ad7947a3fe38c42bbe8c3, type: 3}
+  image: {fileID: 731973636}
 --- !u!1 &744263954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,7 +1351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27456623d36f634c9175cf71c17e7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 76881179}
+  image: {fileID: 1728768275}
   button: {fileID: 900565222}
 --- !u!1 &754791006
 GameObject:
@@ -1695,7 +1713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27456623d36f634c9175cf71c17e7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1374961637}
+  image: {fileID: 1527710234}
   button: {fileID: 900565222}
 --- !u!1 &825575326
 GameObject:
@@ -1760,7 +1778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &827811109
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1799,9 +1817,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cards:
   - {fileID: 805987336}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 215454910}
+  - {fileID: 1063503205}
+  - {fileID: 744263956}
 --- !u!1 &887685932
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,9 +2039,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2134796741}
-        m_TargetAssemblyTypeName: RoomManager, Assembly-CSharp
-        m_MethodName: StartGame
+      - m_Target: {fileID: 827811110}
+        m_TargetAssemblyTypeName: ReadyHandler, Assembly-CSharp
+        m_MethodName: OnReadyPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2158,6 +2176,7 @@ GameObject:
   - component: {fileID: 1050652562}
   - component: {fileID: 1050652565}
   - component: {fileID: 1050652563}
+  - component: {fileID: 1050652566}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2230,7 +2249,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1050652566}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1050652565
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2239,6 +2270,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050652561}
   m_CullTransparentMesh: 1
+--- !u!82 &1050652566
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050652561}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d0b4f3f09f441594f8cb49d935c51ab6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1063503203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2249,6 +2376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1063503204}
   - component: {fileID: 1063503205}
+  - component: {fileID: 1063503206}
   m_Layer: 5
   m_Name: PlayerReady (2)
   m_TagString: Untagged
@@ -2291,8 +2419,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27456623d36f634c9175cf71c17e7c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 361422724}
+  image: {fileID: 754791008}
   button: {fileID: 900565222}
+--- !u!114 &1063503206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063503203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe710a050bb22c94898fe25a0d1b714d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lights:
+  - {fileID: 21300000, guid: a33255f5b48bcd24683e2837d7a2cda3, type: 3}
+  - {fileID: 21300000, guid: 8b86fd9f066c62f4aae48d9f8dbfa1df, type: 3}
+  - {fileID: 21300000, guid: c5eee0fe706ad7947a3fe38c42bbe8c3, type: 3}
+  image: {fileID: 0}
 --- !u!1 &1069871353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2304,6 +2449,7 @@ GameObject:
   - component: {fileID: 1069871354}
   - component: {fileID: 1069871356}
   - component: {fileID: 1069871355}
+  - component: {fileID: 1069871357}
   m_Layer: 5
   m_Name: TVbutton
   m_TagString: Untagged
@@ -2369,6 +2515,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069871353}
   m_CullTransparentMesh: 1
+--- !u!114 &1069871357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069871353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe710a050bb22c94898fe25a0d1b714d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lights:
+  - {fileID: 21300000, guid: a33255f5b48bcd24683e2837d7a2cda3, type: 3}
+  - {fileID: 21300000, guid: 8b86fd9f066c62f4aae48d9f8dbfa1df, type: 3}
+  - {fileID: 21300000, guid: c5eee0fe706ad7947a3fe38c42bbe8c3, type: 3}
+  image: {fileID: 1069871355}
 --- !u!1 &1204768897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2914,7 +3077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1283008081
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3569,6 +3732,7 @@ GameObject:
   - component: {fileID: 1842571466}
   - component: {fileID: 1842571468}
   - component: {fileID: 1842571467}
+  - component: {fileID: 1842571469}
   m_Layer: 5
   m_Name: TVbutton
   m_TagString: Untagged
@@ -3634,6 +3798,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842571465}
   m_CullTransparentMesh: 1
+--- !u!114 &1842571469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842571465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe710a050bb22c94898fe25a0d1b714d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lights:
+  - {fileID: 21300000, guid: a33255f5b48bcd24683e2837d7a2cda3, type: 3}
+  - {fileID: 21300000, guid: 8b86fd9f066c62f4aae48d9f8dbfa1df, type: 3}
+  - {fileID: 21300000, guid: c5eee0fe706ad7947a3fe38c42bbe8c3, type: 3}
+  image: {fileID: 1842571467}
 --- !u!1 &2047441116
 GameObject:
   m_ObjectHideFlags: 0

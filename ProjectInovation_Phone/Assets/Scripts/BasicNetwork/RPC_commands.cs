@@ -18,6 +18,13 @@ public class RPC_commands : MonoBehaviour
         readyHandler.SetImage(ID, SpritePool.Instance.GetSpriteByRole((CharacterManager.Roles)role));
     }
     [PunRPC]
+    private void UpdateReady(int ID)
+    {
+        if(readyHandler == null) readyHandler = FindObjectOfType<ReadyHandler>(true);
+        readyHandler.UpdateReady(ID);
+    }
+
+    [PunRPC]
     private void Ping(string text)
     {
         Debug.Log(text);

@@ -444,6 +444,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a768ffca5c4b04fbea314e2f595fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 765136345}
+  rooms:
+  - {fileID: 7210843671456573945, guid: 8a0ef5115bff96e44b8b6ed498dafb42, type: 3}
 --- !u!4 &1606346401
 Transform:
   m_ObjectHideFlags: 0
@@ -553,6 +556,10 @@ PrefabInstance:
     - target: {fileID: 7210843671456573947, guid: 8a0ef5115bff96e44b8b6ed498dafb42, type: 3}
       propertyPath: m_Name
       value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 7210843671456573947, guid: 8a0ef5115bff96e44b8b6ed498dafb42, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a0ef5115bff96e44b8b6ed498dafb42, type: 3}
