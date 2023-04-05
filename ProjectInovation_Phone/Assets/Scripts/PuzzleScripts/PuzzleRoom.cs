@@ -6,17 +6,7 @@ using UnityEngine.UI;
 public class PuzzleRoom : MonoBehaviour
 {
     [SerializeField] private Image background;
-    [SerializeField] private GameObject room;
-    [SerializeField] private GameObject CloseUp;
+    [SerializeField] private CharacterManager.Roles role;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public CharacterManager.Roles GetOwner() => role;
 }

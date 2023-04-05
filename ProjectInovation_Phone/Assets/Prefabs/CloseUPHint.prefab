@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1349319319017622822}
   m_Layer: 5
-  m_Name: CloseUP
+  m_Name: CloseUPHint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
