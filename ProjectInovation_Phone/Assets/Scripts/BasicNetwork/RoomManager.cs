@@ -23,7 +23,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
         myView.Initialize(PhotonNetwork.CurrentRoom.PlayerCount - 1, myView.GetComponent<PhotonView>());
         UserPrivateData.Instance.Initialize(myView.ID);
 
-        roomName.text = "Room: " + PhotonNetwork.CurrentRoom.Name;
+        roomName.text = "CODE: " + PhotonNetwork.CurrentRoom.Name;
         selectionScreen.GetComponent<CharacterManager>().OnSelected.AddListener(OnCharacterSelected);
     }
 
