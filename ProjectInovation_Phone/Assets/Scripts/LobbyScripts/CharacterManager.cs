@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class CharacterManager : MonoBehaviour
 {
     const int CHARACTER_COUNT = 1;
-    public enum Roles { Engineer = 0, Character2 = 1 }
+    public enum Roles { Engineer = 0, AnimeGuy = 1, NerdGirl = 2, MetalFingers = 3 }
     [SerializeField] private RoleSprites[] _characterSprites = new RoleSprites[CHARACTER_COUNT];
     [SerializeField] private Image image;
     private Roles role;
