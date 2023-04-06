@@ -447,6 +447,8 @@ MonoBehaviour:
   canvas: {fileID: 765136345}
   rooms:
   - {fileID: 7210843671456573945, guid: 8a0ef5115bff96e44b8b6ed498dafb42, type: 3}
+  - {fileID: 7210843671456573945, guid: 57c348f1b981b6842a6bde7ca70d6920, type: 3}
+  roleToShow: 3
 --- !u!4 &1606346401
 Transform:
   m_ObjectHideFlags: 0

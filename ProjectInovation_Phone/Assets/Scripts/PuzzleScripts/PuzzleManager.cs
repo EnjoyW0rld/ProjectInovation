@@ -9,8 +9,8 @@ public class PuzzleManager : MonoBehaviour
     private PhotonView view;
     [SerializeField] private Transform canvas;
     [SerializeField] private PuzzleRoom[] rooms;
-    
 
+    [SerializeField] private CharacterManager.Roles roleToShow;
     void Awake()
     {
         //view = PhotonNetwork.Instantiate("PlayerForPuzzle", Vector3.zero, Quaternion.identity).GetComponent<PhotonView>();
@@ -20,11 +20,9 @@ public class PuzzleManager : MonoBehaviour
     {
         for (int i = 0; i < rooms.Length; i++)
         {
-            Debug.Log("on room" + i);
-            if(rooms[i].GetOwner() == CharacterManager.Roles.Engineer)
+            if(rooms[i].GetOwner() == roleToShow)
             {
                 Instantiate(rooms[i], canvas);
-                print("instantiatate");
             }
         }
         //view.RPC("Ping", RpcTarget.All, "meme");
