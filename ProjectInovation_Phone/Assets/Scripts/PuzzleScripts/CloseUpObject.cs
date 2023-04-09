@@ -12,6 +12,11 @@ public class CloseUpObject : MonoBehaviour, IPointerClickHandler
 
     private AudioSource audioSource;
 
+    private void Start()
+    {
+        audioSource = audioObject.GetComponent<AudioSource>();
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         if (target.TryGetComponent<TaskGeneral>(out TaskGeneral taskGeneral))
@@ -33,6 +38,7 @@ public class CloseUpObject : MonoBehaviour, IPointerClickHandler
                 }
             }
         }
+        Debug.Log(audioSource);
     }
 
     public void StopAudio()

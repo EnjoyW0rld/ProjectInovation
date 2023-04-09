@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 922707993638671364}
   - component: {fileID: 2888650435789114822}
   - component: {fileID: 4413146928205334824}
-  - component: {fileID: 3491447215731012072}
   m_Layer: 5
   m_Name: ObejctToClick
-  m_TagString: Untagged
+  m_TagString: Hint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91,8 +90,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc36a4309fffff14caa3362590d35cd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: {fileID: 21300000, guid: 7112dabc0ade721429d5d0f6a0599879, type: 3}
-  target: {fileID: 1349319319017622821, guid: ea1a12653c3b4fb44a896a8905b1a357, type: 3}
+  hint: {fileID: 21300000, guid: 095bf9bd60f96b14f8d10e1b1514b452, type: 3}
+  target: {fileID: 1349319319017622821, guid: 032b384d76ae32f45ba8a17e8e69f61b, type: 3}
   audioObject: {fileID: 0}
 --- !u!114 &4413146928205334824
 MonoBehaviour:
@@ -150,21 +149,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3491447215731012072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77046137297544073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc36a4309fffff14caa3362590d35cd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hint: {fileID: 0}
-  target: {fileID: 1349319319017622821, guid: 032b384d76ae32f45ba8a17e8e69f61b, type: 3}
-  audioObject: {fileID: 0}
 --- !u!1 &121267576282480430
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,7 +776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &953447681648399598
 Transform:
   m_ObjectHideFlags: 0
@@ -818,9 +802,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 89aa3e997d08d1e4cae108b6fee28366, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 92b1a4d399fdc484ca245a078a2cc880, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1050,7 +1034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc36a4309fffff14caa3362590d35cd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: {fileID: 21300000, guid: fc7b43edb378c6a47b4f5e2e0d836599, type: 3}
+  hint: {fileID: 21300000, guid: d178d1a4a68daab409da5997faf09492, type: 3}
   target: {fileID: 1349319319017622821, guid: 032b384d76ae32f45ba8a17e8e69f61b, type: 3}
   audioObject: {fileID: 4913832239321469235}
 --- !u!1 &7210843671456573947
@@ -1180,7 +1164,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a4491b16e873e934397a57a6437abb87, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 46294ee555d684a44ab63a514b12b5c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
