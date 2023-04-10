@@ -519,9 +519,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18cd6359148c4d4bbb9efc3b554f1e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 1814856312}
-  peakText: {fileID: 443654063}
-  peak: 0
 --- !u!82 &372431386
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2501,7 +2498,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09afbc4f74609d941ac2b9c64d753936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectButton: {fileID: 987953273}
 --- !u!1 &1774901114
 GameObject:
   m_ObjectHideFlags: 0
