@@ -9,6 +9,7 @@ public class ButtonsPress : TaskGeneral
     [SerializeField] private GameObject[] buttons;
     [SerializeField] private int[] sequence;
     //[HideInInspector] public UnityEvent OnSequnceComplete;
+    [SerializeField] private UnityEvent OnError;
     private ClickHandler[] clickObjects;
     private int nextToPress;
 
@@ -54,6 +55,7 @@ public class ButtonsPress : TaskGeneral
         }
         else
         {
+            OnError?.Invoke();
             print("Incorrect pressed");
             nextToPress = 0;
         }
