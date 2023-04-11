@@ -8,6 +8,12 @@ public class GyroscopeHandler : MonoBehaviour
     private Quaternion _calibrated;
     [SerializeField] private float threshold;
 
+    [SerializeField] private float shakeLeft;
+    private float maxBreak;
+    [SerializeField] private float currentBreak;
+    private bool doneShaking = true;
+    [SerializeField] private Vector3 previousPos = Vector3.zero;
+
     void Update()
     {
         if (_defaultPosition == Vector3.zero)
@@ -17,11 +23,47 @@ public class GyroscopeHandler : MonoBehaviour
             _calibrated = Quaternion.Inverse(rotate);
             return;
         }
-        Vector3 direction = GetDirection();
+        Vector3 direction = RoundToTwo(GetDirection());
 
-        Debug.Log(Vector3.Angle(Vector3.one, RoundToTwo(direction)));
-        //isShaking(direction);
+        if (Input.touchCount > 0) StartShake(3, 3);
+
+        if (!doneShaking)
+        {
+            //print(Vector3.Angle(previousPos, direction));
+            //print();
+            if (Vector3.Angle(previousPos, direction) > threshold)
+            {
+                currentBreak = 0;
+                previousPos = direction;
+            }
+            else
+            {
+                currentBreak += Time.deltaTime;
+            }
+            if (currentBreak >= maxBreak)
+            {
+                doneShaking = true;
+                print("Not success");
+            }
+            if (shakeLeft <= 0)
+            {
+                print("Done shaking!");
+                doneShaking = true;
+            }
+            shakeLeft -= Time.deltaTime;
+        }
     }
+
+    private void StartShake(float shakeTime, float maxBreak)
+    {
+        print("shake started");
+        doneShaking = false;
+        shakeLeft = shakeTime;
+        currentBreak = 0;
+        this.maxBreak = maxBreak;
+        previousPos = Vector3.one;
+    }
+
 
     private Vector3 GetDirection()
     {
@@ -30,14 +72,13 @@ public class GyroscopeHandler : MonoBehaviour
         return direction;
     }
 
-    [SerializeField] private Vector3 previousPos = Vector3.zero;
     //private Vector3 currentPos = Vector3.zero;
 
     float timeTillUpdate = .5f;
 
     private bool isShaking(Vector3 dir)
     {
-        if (Vector3.Angle(dir, previousPos) > 0) print(Vector3.Angle(previousPos, dir));
+        //if (Vector3.Angle(dir, previousPos) > 0) print(Vector3.Angle(previousPos, dir));
         if (timeTillUpdate <= 0)
         {
             previousPos = dir;
