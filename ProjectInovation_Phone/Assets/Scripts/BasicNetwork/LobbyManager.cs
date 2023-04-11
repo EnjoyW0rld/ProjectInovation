@@ -8,6 +8,8 @@ using System.Text;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
+    [SerializeField]
+    private GameObject errorObj;
     public void OnHostPressed()
     {
         PhotonNetwork.CreateRoom(GenerateRandomString());
@@ -16,6 +18,12 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public void OnConnectPressed(string name)
     {
         PhotonNetwork.JoinRoom(name);
+        errorObj.SetActive(false);
+    }
+    public override void OnJoinRoomFailed(short returnCode, string message)
+    {
+        base.OnJoinRoomFailed(returnCode, message);
+        errorObj.SetActive(true);
     }
     public override void OnJoinedRoom()
     {
