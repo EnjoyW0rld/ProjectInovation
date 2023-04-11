@@ -36,5 +36,6 @@ public class SpritePool : MonoBehaviour
         }
         return null;
     }
+    public RoleSprites[] GetAllRoles() => roles;
 
 }

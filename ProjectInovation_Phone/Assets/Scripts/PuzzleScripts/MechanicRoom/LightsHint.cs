@@ -38,6 +38,7 @@ public class LightsHint : MonoBehaviour
         TurnLight(-1);
         timeLeft = TimeBetweenSequence;
     }
+
     private void TurnLight(int lightID)
     {
         for (int i = 0; i < lights.Length; i++)

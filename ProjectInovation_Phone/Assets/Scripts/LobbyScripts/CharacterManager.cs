@@ -9,25 +9,26 @@ public class CharacterManager : MonoBehaviour
 {
     const int CHARACTER_COUNT = 1;
     public enum Roles { Engineer = 0, Chemist = 1, Analyst = 2, Mechanic = 3 }
-    [SerializeField] private RoleSprites[] _characterSprites = new RoleSprites[CHARACTER_COUNT];
+    [SerializeField] private RoleSprites[] _characterSprites;// = new RoleSprites[CHARACTER_COUNT];
     [SerializeField] private Image image;
     private Roles role;
     [HideInInspector] public UnityEvent<RoleSprites> OnSelected;
 
     void Start()
     {
+        _characterSprites = SpritePool.Instance.GetAllRoles();
         role = 0;
     }
 
     public void ScrollNext()
     {
-        if ((int)role == CHARACTER_COUNT) role = 0;
+        if ((int)role == _characterSprites.Length - 1) role = 0;
         else role++;
         UpdateSprite();
     }
     public void ScrollBack()
     {
-        if ((int)role == 0) role = (Roles)CHARACTER_COUNT;
+        if ((int)role == 0) role = (Roles)_characterSprites.Length - 1;
         else role--;
         UpdateSprite();
     }

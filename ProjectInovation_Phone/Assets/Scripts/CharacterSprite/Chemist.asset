@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0d0b5814b13216428146fc69b525fec, type: 3}
-  m_Name: Player4
+  m_Name: Chemist
   m_EditorClassIdentifier: 
-  role: 3
-  _sprite: {fileID: 21300000, guid: 2a7b5bf0d084967488c6fd58ad35fcbc, type: 3}
+  role: 1
+  _sprite: {fileID: 21300000, guid: 749efba1966517b488ff9c5e3e5ab22c, type: 3}

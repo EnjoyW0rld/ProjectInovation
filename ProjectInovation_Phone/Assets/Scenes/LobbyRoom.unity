@@ -1748,6 +1748,8 @@ MonoBehaviour:
   roles:
   - {fileID: 11400000, guid: 7baf933f71f2c154dbdedd562c0a625e, type: 2}
   - {fileID: 11400000, guid: 0fc590e61da14204fa9cfcc4ecfc4829, type: 2}
+  - {fileID: 11400000, guid: d757d4c7d61616c41bb148dfac187f63, type: 2}
+  - {fileID: 11400000, guid: 179139e1f9567e448b8fd17da2cbc106, type: 2}
 --- !u!4 &825575328
 Transform:
   m_ObjectHideFlags: 0

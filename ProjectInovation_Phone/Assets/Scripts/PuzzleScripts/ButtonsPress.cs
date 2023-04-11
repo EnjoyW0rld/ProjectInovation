@@ -8,7 +8,7 @@ public class ButtonsPress : TaskGeneral
 {
     [SerializeField] private GameObject[] buttons;
     [SerializeField] private int[] sequence;
-    [HideInInspector] public UnityEvent OnSequnceComplete;
+    //[HideInInspector] public UnityEvent OnSequnceComplete;
     private ClickHandler[] clickObjects;
     private int nextToPress;
 
