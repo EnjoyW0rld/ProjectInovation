@@ -10,6 +10,7 @@ public class ButtonsPress : TaskGeneral
     [SerializeField] private int[] sequence;
     //[HideInInspector] public UnityEvent OnSequnceComplete;
     [SerializeField] private UnityEvent OnError;
+    [SerializeField] private AudioSource correctSound;
     private ClickHandler[] clickObjects;
     private int nextToPress;
 
@@ -51,7 +52,10 @@ public class ButtonsPress : TaskGeneral
         if (sequence[nextToPress] == id)
         {
             nextToPress++;
-            if (nextToPress == sequence.Length) print("Done!");
+            if (nextToPress == sequence.Length) { 
+                print("Done!");
+                correctSound.Play();
+            }
         }
         else
         {

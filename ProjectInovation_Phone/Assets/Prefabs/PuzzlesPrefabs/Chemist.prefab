@@ -92,7 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: {fileID: 21300000, guid: 095bf9bd60f96b14f8d10e1b1514b452, type: 3}
   target: {fileID: 1349319319017622821, guid: 032b384d76ae32f45ba8a17e8e69f61b, type: 3}
-  audioObject: {fileID: 0}
+  audioObject: {fileID: 4913832239321469235}
 --- !u!114 &4413146928205334824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,9 +1034,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc36a4309fffff14caa3362590d35cd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: {fileID: 21300000, guid: d178d1a4a68daab409da5997faf09492, type: 3}
-  target: {fileID: 1349319319017622821, guid: 032b384d76ae32f45ba8a17e8e69f61b, type: 3}
-  audioObject: {fileID: 4913832239321469235}
+  hint: {fileID: 0}
+  target: {fileID: 1349319319017622821, guid: f909ea9ea41784c4997af94e09e9f6f7, type: 3}
+  audioObject: {fileID: 0}
 --- !u!1 &7210843671456573947
 GameObject:
   m_ObjectHideFlags: 0

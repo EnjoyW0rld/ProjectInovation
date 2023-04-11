@@ -182,7 +182,7 @@ MonoBehaviour:
   pitchChangeMult: 0.278
   allVolume: 0.2
   minTime: 1
-  maxTime: 10
+  maxTime: 20
 --- !u!82 &2677663435352125710
 AudioSource:
   m_ObjectHideFlags: 0
@@ -195,7 +195,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.966
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
