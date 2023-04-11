@@ -31,6 +31,8 @@ public class ReadyHandler : MonoBehaviour
 
     public void SetImage(int id, Sprite image)
     {
+        Animator animator = cards[id].transform.GetChild(1). GetComponent<Animator>();
+        animator.enabled = false;
         print("Changing sprite for" + id);
         cards[id].SetImage(image);
     }
