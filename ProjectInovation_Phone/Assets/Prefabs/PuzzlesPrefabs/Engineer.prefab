@@ -518,8 +518,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc36a4309fffff14caa3362590d35cd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: {fileID: 21300000, guid: 69fdfe6d8e206134a83223383472ff48, type: 3}
-  target: {fileID: 1349319319017622821, guid: ea1a12653c3b4fb44a896a8905b1a357, type: 3}
+  hint: {fileID: 0}
+  target: {fileID: 1349319319017622821, guid: bf40b57da65157e4ba02025d86451bb8, type: 3}
   audioObject: {fileID: 0}
 --- !u!114 &7629383621188442156
 MonoBehaviour:

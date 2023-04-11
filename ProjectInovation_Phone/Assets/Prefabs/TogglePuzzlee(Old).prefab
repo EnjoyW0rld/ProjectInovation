@@ -842,7 +842,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4446632013257947731}
   m_Layer: 0
-  m_Name: TogglePuzzlee
+  m_Name: TogglePuzzlee(Old)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

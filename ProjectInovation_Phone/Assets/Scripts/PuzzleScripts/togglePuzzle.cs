@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class togglePuzzle : MonoBehaviour
+public class togglePuzzle : TaskGeneral
 {
-    public GameObject[] toggles;
+    public Image[] toggles;
     public Sprite[] togglesSprites;
     public int[] currentPositions;
     public int[] solvePositions;
@@ -16,11 +17,15 @@ public class togglePuzzle : MonoBehaviour
     {
         for (int i = 0; i < currentPositions.Length; i++)
         {
+            ClickHandler handler = toggles[i].gameObject.AddComponent<ClickHandler>();
+            handler.OnPointerClicked.AddListener(ClickedOnButton);
+            handler.SetObjID(i);
             ChangeSprite(toggles[i], currentPositions[i]);
         }
     }
 
     // Update is called once per frame
+        /**
     void Update()
     {
         for (int i = 0; i < toggles.Length; i++)
@@ -58,24 +63,55 @@ public class togglePuzzle : MonoBehaviour
             }
         }
     }
+        /**/
 
-    public void ChangeSprite (GameObject gameObj, int currentPos)
+    public void ChangeSprite (Image gameObj, int currentPos)
     {
-        gameObj.GetComponent<SpriteRenderer>().sprite = togglesSprites[currentPos];
+        gameObj.sprite = togglesSprites[currentPos];
+        //gameObj.GetComponent<SpriteRenderer>().sprite = togglesSprites[currentPos];
     }
 
-    private bool isClicked(GameObject checkObject)
+    private void ClickedOnButton(int id)
     {
-        if (Input.GetMouseButtonDown(0))
+        isClicked(toggles[id]);
+        if (currentPositions[id] <= 2)
         {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit.collider != null && hit.collider.gameObject == checkObject)
+            currentPositions[id]++;
+        }
+        else
+        {
+            currentPositions[id] = 0;
+        }
+
+        ChangeSprite(toggles[id], currentPositions[id]);
+
+        if (allChecked == false)
+        {
+            for (int i = 0; i < toggles.Length; i++)
             {
-                AudioSource audioSource = checkObject.GetComponent<AudioSource>();
-                audioSource.Play();
-                return true;
+                if (currentPositions[i] != solvePositions[i])
+                {
+                    allChecked = false;
+                    break;
+                }
+                allChecked = true;
+            }
+            if (allChecked)
+            {
+                //Execute some code
+                Debug.Log("Puzzle solved!");
+                OnComplete?.Invoke();
+                GetComponent<AudioSource>().Play();
             }
         }
-        return false;
+
+    }
+
+    private void isClicked(Image checkObject)
+    { 
+                AudioSource audioSource = checkObject.GetComponent<AudioSource>();
+                audioSource.Play();
+             //   return true;
+       // return false;
     }
 }

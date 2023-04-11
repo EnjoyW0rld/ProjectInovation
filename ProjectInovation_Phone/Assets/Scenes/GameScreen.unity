@@ -657,7 +657,7 @@ MonoBehaviour:
   - {fileID: 7210843671456573945, guid: 57c348f1b981b6842a6bde7ca70d6920, type: 3}
   - {fileID: 4231700450313923383, guid: b1443927dffd0094fa41d613ce4184a2, type: 3}
   - {fileID: 3185417318497261959, guid: 91475c3124611e7499245a3cafa0e55a, type: 3}
-  roleToShow: 3
+  roleToShow: 0
 --- !u!4 &1606346401
 Transform:
   m_ObjectHideFlags: 0
