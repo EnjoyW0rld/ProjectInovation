@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GyroscopeHandler : MonoBehaviour
 {
@@ -8,12 +9,12 @@ public class GyroscopeHandler : MonoBehaviour
     private Quaternion _calibrated;
     [SerializeField] private float threshold;
 
+    /*
     [SerializeField] private float shakeLeft;
     private float maxBreak;
     [SerializeField] private float currentBreak;
     private bool doneShaking = true;
     [SerializeField] private Vector3 previousPos = Vector3.zero;
-
     void Update()
     {
         if (_defaultPosition == Vector3.zero)
@@ -63,6 +64,91 @@ public class GyroscopeHandler : MonoBehaviour
         this.maxBreak = maxBreak;
         previousPos = Vector3.one;
     }
+    
+    private bool isShakeDone;
+
+    [SerializeField] private float updateTime = .2f;
+     */
+    [SerializeField] private Vector3 previousPos = Vector3.one;
+    private float timeTillUpdate;
+    [SerializeField] private UnityEvent OnShakeComplete;
+    [SerializeField] private float desiredShakeTime = 1.5f;
+    [SerializeField] private float currentShakeTime;
+
+    [SerializeField]private float ShakeDetectionThreshold;
+    [SerializeField] private float MinShakeInterval;
+    private float sqrDetectionThreshold;
+    private float timeSinceLastShake;
+
+    private void Start()
+    {
+        sqrDetectionThreshold = Mathf.Pow(ShakeDetectionThreshold, 2);
+    }
+
+
+    
+    private float timeToBreak;
+    
+
+    private void Update()
+    {
+        /*
+        if (_defaultPosition == Vector3.zero)
+        {
+            _defaultPosition = Input.acceleration;
+            Quaternion rotate = Quaternion.FromToRotation(new Vector3(0, 0, 1f), _defaultPosition);
+            _calibrated = Quaternion.Inverse(rotate);
+            return;
+        }
+        Vector3 direction = RoundToTwo(GetDirection());
+         */
+
+
+        if(Input.acceleration.sqrMagnitude >= sqrDetectionThreshold &&
+            Time.unscaledTime >= timeSinceLastShake + MinShakeInterval)
+        {
+            timeToBreak = 1;
+            timeSinceLastShake = Time.unscaledTime;
+        }
+        currentShakeTime += Time.deltaTime;
+        if(timeToBreak <= 0)
+        {
+            currentShakeTime = 0;
+        }
+        timeToBreak -= Time.deltaTime;
+        if(currentShakeTime >= desiredShakeTime)
+        {
+            print("shaked!");
+            OnShakeComplete?.Invoke();
+
+        }
+        /*
+        if (timeTillUpdate <= 0)
+        {
+            previousPos = direction;
+            timeTillUpdate = updateTime;
+        }
+        else timeTillUpdate -= Time.deltaTime;
+
+        if (Vector3.Angle(previousPos,direction) > threshold)
+        {
+            currentShakeTime += Time.deltaTime;
+            if (currentShakeTime >= desiredShakeTime)
+            {
+                isShakeDone = true;
+                OnShakeComplete?.Invoke();
+                print("Done shaking!!");
+            }
+            //previousPos = direction;
+        }
+        else
+        {
+            currentShakeTime = 0;
+        }
+         */
+
+    }
+
 
 
     private Vector3 GetDirection()
@@ -74,7 +160,7 @@ public class GyroscopeHandler : MonoBehaviour
 
     //private Vector3 currentPos = Vector3.zero;
 
-    float timeTillUpdate = .5f;
+    //float timeTillUpdate = .5f;
 
     private bool isShaking(Vector3 dir)
     {

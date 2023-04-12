@@ -549,6 +549,7 @@ GameObject:
   - component: {fileID: 961329419829079206}
   - component: {fileID: 912805663992743348}
   - component: {fileID: 8580348880224010054}
+  - component: {fileID: 2516263134505569839}
   m_Layer: 5
   m_Name: post_it
   m_TagString: Untagged
@@ -655,6 +656,40 @@ PlayableDirector:
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
+--- !u!114 &2516263134505569839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4692652940159999877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f283998d845e74390c5293ea78641f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 2
+  previousPos: {x: 1, y: 1, z: 1}
+  desiredShakeTime: 1.5
+  currentShakeTime: 0
+  OnShakeComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8580348880224010054}
+        m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  updateTime: 0.5
+  ShakeDetectionThreshold: 3
+  MinShakeInterval: 0.2
 --- !u!1 &6398171615375261772
 GameObject:
   m_ObjectHideFlags: 0
