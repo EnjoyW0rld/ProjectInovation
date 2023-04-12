@@ -72,7 +72,7 @@ MonoBehaviour:
   - {fileID: 1697966688096323828}
   - {fileID: 5295666627128750254}
   - {fileID: 8230689951035460481}
-  sequence: 00000000020000000100000002000000
+  sequence: 01000000000000000200000003000000
   OnError:
     m_PersistentCalls:
       m_Calls:
@@ -89,6 +89,10 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   correctSound: {fileID: 1786409723480094909}
+  correctSprite: {fileID: 21300000, guid: ce30ff18c9d96b94aaa523a9f2a9694a, type: 3}
+  defaultSprite: {fileID: 21300000, guid: 01d334f115e80f240a46a0c6e46b35da, type: 3}
+  wrongSprite: {fileID: 21300000, guid: 7530a3e655ddc6a42a1e3e5988031c1f, type: 3}
+  backgroundImg: {fileID: 4781168965690761913}
 --- !u!82 &500812688530203866
 AudioSource:
   m_ObjectHideFlags: 0

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class ButtonsPress : TaskGeneral
 {
@@ -13,6 +14,10 @@ public class ButtonsPress : TaskGeneral
     [SerializeField] private AudioSource correctSound;
     private ClickHandler[] clickObjects;
     private int nextToPress;
+    [SerializeField] private Sprite correctSprite, defaultSprite;
+    [SerializeField] private Sprite wrongSprite;
+    [SerializeField]
+    private Image backgroundImg;
 
     private void Start()
     {
@@ -51,10 +56,12 @@ public class ButtonsPress : TaskGeneral
     {
         if (sequence[nextToPress] == id)
         {
+            backgroundImg.sprite = defaultSprite;
             nextToPress++;
             if (nextToPress == sequence.Length) { 
                 print("Done!");
                 correctSound.Play();
+                backgroundImg.sprite = correctSprite;
             }
         }
         else
@@ -62,6 +69,7 @@ public class ButtonsPress : TaskGeneral
             OnError?.Invoke();
             print("Incorrect pressed");
             nextToPress = 0;
+            backgroundImg.sprite = wrongSprite;
         }
     }
 
