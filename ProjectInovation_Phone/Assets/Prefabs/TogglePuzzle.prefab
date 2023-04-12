@@ -66,6 +66,8 @@ MonoBehaviour:
   - {fileID: 1893533787, guid: 6003e1499f1d10045b4484176ced994f, type: 3}
   currentPositions: 00000000000000000000000000000000
   solvePositions: 03000000000000000200000001000000
+  background: {fileID: 6398171615375261772}
+  backgroundCorrect: {fileID: 21300000, guid: f55e286c6632df94cafd3e19dd676f6a, type: 3}
 --- !u!82 &6053854254882339029
 AudioSource:
   m_ObjectHideFlags: 0

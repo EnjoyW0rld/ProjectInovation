@@ -2,29 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightsHint : MonoBehaviour
+public class LightsHint : TaskGeneral
 {
     [SerializeField] private GameObject[] lights = new GameObject[3];
     [SerializeField] private int[] sequnce = new int[3];
     [SerializeField] private float TimeBetweenSequence = 3;
+    [SerializeField] private bool trigger=false;
+    [SerializeField] private AudioSource[] blink;
+    private int no = 0;
     private float timeLeft;
     //private float currentPlace;
 
     private void Start()
     {
-        timeLeft = TimeBetweenSequence;
+        timeLeft = -1;// TimeBetweenSequence;
     }
 
     void Update()
     {
-        if(timeLeft < 0)
+        if (trigger)
         {
-            timeLeft = 0;
-            print("starting coroutine");
-            StartCoroutine("SwitchLights");
-        }else if(timeLeft > 0)
-        {
-            timeLeft -= Time.deltaTime;
+            if (timeLeft < 0)
+            {
+                timeLeft = 0;
+                print("starting coroutine");
+                StartCoroutine("SwitchLights");
+            }
+            else if (timeLeft > 0)
+            {
+                timeLeft -= Time.deltaTime;
+            }
         }
     }
 
@@ -45,5 +52,19 @@ public class LightsHint : MonoBehaviour
         {
             lights[i].SetActive(i == lightID);
         }
+        blink[no].Play();
+        Debug.Log(no);
+        if (no < blink.Length-1)
+        {
+            no++;
+        }
+        else no = 0;
+
     }
+    
+    public void buttonActivated()
+    {
+        trigger = true;
+    }
+
 }

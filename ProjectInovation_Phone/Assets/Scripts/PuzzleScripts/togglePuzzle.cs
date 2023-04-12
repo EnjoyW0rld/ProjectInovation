@@ -10,7 +10,13 @@ public class togglePuzzle : TaskGeneral
     public int[] currentPositions;
     public int[] solvePositions;
 
+    [SerializeField]
+    private GameObject background;
+    [SerializeField]
+    private Sprite backgroundCorrect;
     private bool allChecked = false;
+
+    private Image myImage;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +28,8 @@ public class togglePuzzle : TaskGeneral
             handler.SetObjID(i);
             ChangeSprite(toggles[i], currentPositions[i]);
         }
+
+        myImage = background.GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -98,10 +106,12 @@ public class togglePuzzle : TaskGeneral
             }
             if (allChecked)
             {
+                myImage.sprite = backgroundCorrect;
                 //Execute some code
                 Debug.Log("Puzzle solved!");
                 OnComplete?.Invoke();
                 GetComponent<AudioSource>().Play();
+
             }
         }
 
