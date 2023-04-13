@@ -16,5 +16,6 @@ public class ClickHandler : MonoBehaviour, IPointerClickHandler
     {
         OnPointerClicked?.Invoke(objId);
     }
+    public int GetId() => objId;
 
 }
