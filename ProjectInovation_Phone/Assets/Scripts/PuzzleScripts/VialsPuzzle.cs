@@ -6,8 +6,8 @@ using UnityEngine.Events;
 
 public class VialsPuzzle : TaskGeneral
 {
-    [SerializeField, Tooltip("0 - green, 1 - triangle,2 - square, 3 - tall")] private Sprite[] sprites = new Sprite[4];
-    [SerializeField] private Image[] vials;
+   // [SerializeField, Tooltip("0 - green, 1 - triangle,2 - square, 3 - tall")] private Sprite[] sprites = new Sprite[4];
+    [SerializeField] private RectTransform[] vials;
     [SerializeField] private int[] sequence;
     [SerializeField] private int[] currentPlacement;
     [SerializeField] private UnityEvent OnVialMove;
@@ -74,14 +74,14 @@ public class VialsPuzzle : TaskGeneral
     {
         for (int i = 0; i < vials.Length; i++)
         {
-            vials[i].sprite = sprites[currentPlacement[i]];
+            //vials[i].sprite = sprites[currentPlacement[i]]; 
         }
     }
     private void SwitchPlaces(int id)
     {
-        Vector3 previousPos = vials[id].rectTransform.position;
-        vials[id].rectTransform.position = vials[chosenImage].rectTransform.position;
-        vials[chosenImage].rectTransform.position = previousPos;
+        Vector3 previousPos = vials[id].position;
+        vials[id].position = vials[chosenImage].position;
+        vials[chosenImage].position = previousPos;
     }
     private int GetIdOf(int num)
     {
