@@ -8,14 +8,7 @@ public class CloseUpObject : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] private Sprite hint;
     [SerializeField] private GameObject target;
-    [SerializeField] private GameObject audioObject;
-
-    private AudioSource audioSource;
-
-    private void Start()
-    {
-        audioSource = audioObject.GetComponent<AudioSource>();
-    }
+    
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -28,25 +21,8 @@ public class CloseUpObject : MonoBehaviour, IPointerClickHandler
             GameObject o = Instantiate(target, Vector3.zero, Quaternion.identity, transform.parent);
             o.GetComponentInChildren<Image>().sprite = hint;
             Debug.Log("Clicked on object");
-
-            if (audioObject)
-            {
-                audioSource = audioObject.GetComponent<AudioSource>();
-                if (audioSource != null)
-                {
-                    audioSource.Play();
-                }
-            }
-        }
-        Debug.Log(audioSource);
-    }
-
-    public void StopAudio()
-    {
-        if (audioSource != null && audioSource.isPlaying)
-        {
-            audioSource.Stop();
         }
     }
+
 
 }
