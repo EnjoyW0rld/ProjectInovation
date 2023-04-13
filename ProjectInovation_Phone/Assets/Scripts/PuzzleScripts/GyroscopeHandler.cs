@@ -161,7 +161,6 @@ public class GyroscopeHandler : MonoBehaviour
     //private Vector3 currentPos = Vector3.zero;
 
     //float timeTillUpdate = .5f;
-
     private bool isShaking(Vector3 dir)
     {
         //if (Vector3.Angle(dir, previousPos) > 0) print(Vector3.Angle(previousPos, dir));

@@ -670,8 +670,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   threshold: 2
   previousPos: {x: 1, y: 1, z: 1}
-  desiredShakeTime: 1.5
-  currentShakeTime: 0
   OnShakeComplete:
     m_PersistentCalls:
       m_Calls:
@@ -687,7 +685,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  updateTime: 0.5
+  desiredShakeTime: 1.5
+  currentShakeTime: 0
   ShakeDetectionThreshold: 3
   MinShakeInterval: 0.2
 --- !u!1 &6398171615375261772
