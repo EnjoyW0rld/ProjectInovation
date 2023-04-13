@@ -15,6 +15,7 @@ public class RPC_commands : MonoBehaviour
     private void UpdateSprite(int ID, int role)
     {
         if (readyHandler == null) readyHandler = FindObjectOfType<ReadyHandler>(true);
+        print(SpritePool.Instance.GetSpriteByRole((CharacterManager.Roles)role));
         readyHandler.SetImage(ID, SpritePool.Instance.GetSpriteByRole((CharacterManager.Roles)role));
     }
     [PunRPC]
@@ -22,6 +23,7 @@ public class RPC_commands : MonoBehaviour
     {
         if(readyHandler == null) readyHandler = FindObjectOfType<ReadyHandler>(true);
         readyHandler.UpdateReady(ID);
+        print(ID);
     }
 
     [PunRPC]
