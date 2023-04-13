@@ -2,14 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
-public class VialsPuzzle : MonoBehaviour
+public class VialsPuzzle : TaskGeneral
 {
     [SerializeField, Tooltip("0 - green, 1 - triangle,2 - square, 3 - tall")] private Sprite[] sprites = new Sprite[4];
     [SerializeField] private Image[] vials;
     [SerializeField] private int[] sequence;
     [SerializeField] private int[] currentPlacement;
+    [SerializeField] private UnityEvent OnVialMove;
     private ClickHandler[] clickObjects;
+    [SerializeField] private Sprite correctSprite, defaultSprite;
+    [SerializeField] private Image background;
+    [SerializeField] private AudioSource correctSound;
 
     [SerializeField] private int chosenImage = -1;
 
@@ -56,6 +61,12 @@ public class VialsPuzzle : MonoBehaviour
             //currentPlacement[id] = chosenImage;
             //currentPlacement[chosenImage] = previousPlace;
             chosenImage = -1;
+            OnVialMove?.Invoke();
+        }
+        if (IsCorrect()) { 
+            OnComplete?.Invoke();
+            background.sprite = correctSprite;
+            correctSound.Play();
         }
         //SetImages();
     }
@@ -79,5 +90,13 @@ public class VialsPuzzle : MonoBehaviour
             if (currentPlacement[i] == num) return i;
         }
         return -1;
+    }
+    private bool IsCorrect()
+    {
+        for (int i = 0; i < sequence.Length; i++)
+        {
+            if (sequence[i] != currentPlacement[i]) return false;
+        }
+        return true;
     }
 }
