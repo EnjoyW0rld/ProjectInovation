@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.33474436, g: 1, b: 0.3160377, a: 0.6117647}
+  m_Color: {r: 0.33474436, g: 1, b: 0.3160377, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -92,7 +92,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: {fileID: 21300000, guid: d33bcdbb22d603443ac64fb6c6cab793, type: 3}
   target: {fileID: 1349319319017622821, guid: 032b384d76ae32f45ba8a17e8e69f61b, type: 3}
-  audioObject: {fileID: 0}
 --- !u!114 &7521580616389900781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,7 +248,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 428, y: 213}
+  m_AnchoredPosition: {x: 436, y: 123.99}
   m_SizeDelta: {x: 534.3082, y: 147.3009}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &672505366898375497
@@ -273,7 +272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8396226, g: 0.8268598, b: 0.1544589, a: 1}
+  m_Color: {r: 0.8396226, g: 0.8268598, b: 0.1544589, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -304,7 +303,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: {fileID: 0}
   target: {fileID: 1349319319017622821, guid: 162ec99e4cd0e034b9fcd3d2c3f47cf8, type: 3}
-  audioObject: {fileID: 3334592721858366096}
 --- !u!114 &6412438065826097742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1298,8 +1296,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -827.42053, y: -29.184692}
-  m_SizeDelta: {x: 199.159, y: 174.3693}
+  m_AnchoredPosition: {x: -870.129, y: -66.21735}
+  m_SizeDelta: {x: 206.9009, y: 232.434}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2710599299035762910
 CanvasRenderer:
@@ -1322,7 +1320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1353,7 +1351,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hint: {fileID: 0}
   target: {fileID: 1349319319017622821, guid: e83fae51eb8324043a3e667294b7d16f, type: 3}
-  audioObject: {fileID: 3334592721858366096}
 --- !u!114 &4248339492072642684
 MonoBehaviour:
   m_ObjectHideFlags: 0
