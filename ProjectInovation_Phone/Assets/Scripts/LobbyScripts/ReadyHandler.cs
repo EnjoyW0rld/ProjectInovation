@@ -41,7 +41,11 @@ public class ReadyHandler : MonoBehaviour
         if (!PhotonNetwork.IsMasterClient) return;
         for (int i = 0; i < cards.Length; i++)
         {
-            if (!cards[i].IsReady) return;
+            if (!cards[i].IsReady)
+            {
+                print("someone not ready " + i);
+                return;
+            }
         }
         PhotonNetwork.LoadLevel("GameScreen");
 

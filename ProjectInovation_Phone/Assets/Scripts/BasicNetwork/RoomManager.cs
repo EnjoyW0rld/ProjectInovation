@@ -19,7 +19,6 @@ public class RoomManager : MonoBehaviourPunCallbacks
     void Start()
     {
         myView = PhotonNetwork.Instantiate("Player", Vector3.zero, Quaternion.identity).GetComponent<PlayerData>();
-        //myView.GetComponent<PlayerData>().SetId(PhotonNetwork.CurrentRoom.PlayerCount - 1);// = PhotonNetwork.ViewCount + 1;
         myView.Initialize(PhotonNetwork.CurrentRoom.PlayerCount - 1, myView.GetComponent<PhotonView>());
         UserPrivateData.Instance.Initialize(myView.ID);
 

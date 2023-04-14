@@ -10,7 +10,7 @@ public class PlayerCard : MonoBehaviour
     [HideInInspector] public UnityEvent OnReadyChanged;
     //[SerializeField] private Button button;
     private TVLight lights;
-    private bool isReady;
+    [SerializeField]private bool isReady;
 
     private void Start()
     {
