@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 9127760234386124020}
   - component: {fileID: 500812688530203866}
   - component: {fileID: 1786409723480094909}
+  - component: {fileID: 3836288481987376112}
   m_Layer: 5
   m_Name: hapticPuzzle
   m_TagString: Untagged
@@ -521,6 +522,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3836288481987376112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349319319017622821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eae38fff480846b4f985dab83bcf7356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sequnce: ..--
+  animator: {fileID: 124025317416212480}
+  shortLength: 400
+  longLength: 1000
+  breakBetweenVibrations: 0.2
+  breakBetweenNumbers: 3
 --- !u!1 &1349319319921188895
 GameObject:
   m_ObjectHideFlags: 0
@@ -2685,9 +2704,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sequnce: ..---
+  animator: {fileID: 0}
   shortLength: 400
   longLength: 1000
-  breakBetween: 0.2
+  breakBetweenVibrations: 0.2
+  breakBetweenNumbers: 3
 --- !u!1 &5100557117910470464
 GameObject:
   m_ObjectHideFlags: 0

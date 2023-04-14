@@ -23,7 +23,7 @@ public class InputButtonHandler : MonoBehaviour
 
     private void PressedButton()
     {
-        OnButtonPressed?.Invoke(text);
+        OnButtonPressed?.Invoke(text.ToUpper());
     }
 
     private void OnInputChange(string text)

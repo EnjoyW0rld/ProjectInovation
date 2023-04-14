@@ -161,6 +161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5805984212724060987}
+  - component: {fileID: 6694810476634688483}
   m_Layer: 6
   m_Name: MonsterAttack
   m_TagString: Untagged
@@ -190,3 +191,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -496}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6694810476634688483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5805984212724060986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09a1b747f8de5846a99991bead52edf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveObj: {fileID: 5805984212451530277}
+  targetObj: {fileID: 5805984212668146753}
+  halfSize: 0
+  xMax: 0

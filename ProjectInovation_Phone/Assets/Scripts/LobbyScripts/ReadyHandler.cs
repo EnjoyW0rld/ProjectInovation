@@ -16,23 +16,15 @@ public class ReadyHandler : MonoBehaviour
         id = roomManager.GetID();
         for (int i = 0; i < cards.Length; i++)
         {
-            //if (i != id) cards[i].Deselect();
+            cards[i].OnReadyChanged.AddListener(OnReadyChanged);
         }
-    }
-    private void OnEnable()
-    {
-        //if (roomManager == null) roomManager = FindObjectOfType<RoomManager>();
-        //roomManager.GetPlayerData().Commands.OnReadyChange.AddListener(SetImage);
-    }
-    private void OnDisable()
-    {
-        //roomManager.GetPlayerData().Commands.OnReadyChange.RemoveListener(SetImage);
     }
 
     public void SetImage(int id, Sprite image)
     {
-        Animator animator = cards[id].transform.GetChild(1). GetComponent<Animator>();
+        Animator animator = cards[id].transform.GetChild(1).GetComponent<Animator>();
         animator.enabled = false;
+
         print("Changing sprite for" + id);
         cards[id].SetImage(image);
     }
@@ -44,4 +36,15 @@ public class ReadyHandler : MonoBehaviour
     {
         cards[id].ChangeReady();
     }
+    private void OnReadyChanged()
+    {
+        if (!PhotonNetwork.IsMasterClient) return;
+        for (int i = 0; i < cards.Length; i++)
+        {
+            if (!cards[i].IsReady) return;
+        }
+        PhotonNetwork.LoadLevel("GameScreen");
+
+    }
+
 }
