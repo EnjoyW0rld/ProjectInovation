@@ -8,7 +8,7 @@ using Photon.Realtime;
 
 public class RoomManager : MonoBehaviourPunCallbacks
 {
-    [SerializeField] private TextMeshProUGUI roomName;
+    [SerializeField] private TextMeshProUGUI[] roomName;
     [SerializeField] private CharacterContainer[] _characters;
 
     [SerializeField] private GameObject selectionScreen;
@@ -23,7 +23,10 @@ public class RoomManager : MonoBehaviourPunCallbacks
         myView.Initialize(PhotonNetwork.CurrentRoom.PlayerCount - 1, myView.GetComponent<PhotonView>());
         UserPrivateData.Instance.Initialize(myView.ID);
 
-        roomName.text = "CODE: " + PhotonNetwork.CurrentRoom.Name;
+        for (int i = 0; i < roomName.Length; i++)
+        {
+            roomName[i].text = "CODE: " + PhotonNetwork.CurrentRoom.Name;
+        }
         selectionScreen.GetComponent<CharacterManager>().OnSelected.AddListener(OnCharacterSelected);
     }
 
@@ -32,7 +35,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
         if (Input.GetKeyDown(KeyCode.G) && PhotonNetwork.IsMasterClient)
             PhotonNetwork.LoadLevel("GameScreen");
         //myView.View.RPC("UpdateCharacter", RpcTarget.All,1);
-        
+
     }
     private void OnCharacterSelected(RoleSprites role)
     {
@@ -46,8 +49,8 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
-        if(myView.ChoseRole())
-        myView.View.RPC("UpdateSprite", RpcTarget.All, myView.ID, (int)myView.GetRole());
+        if (myView.ChoseRole())
+            myView.View.RPC("UpdateSprite", RpcTarget.All, myView.ID, (int)myView.GetRole());
 
         base.OnPlayerEnteredRoom(newPlayer);
     }

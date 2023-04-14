@@ -21,7 +21,7 @@ public class RPC_commands : MonoBehaviour
     [PunRPC]
     private void UpdateReady(int ID)
     {
-        if(readyHandler == null) readyHandler = FindObjectOfType<ReadyHandler>(true);
+        if (readyHandler == null) readyHandler = FindObjectOfType<ReadyHandler>(true);
         readyHandler.UpdateReady(ID);
         print(ID);
     }
@@ -30,5 +30,22 @@ public class RPC_commands : MonoBehaviour
     private void Ping(string text)
     {
         Debug.Log(text);
+    }
+
+    PuzzleManager puzzleManager;
+
+    [PunRPC]
+    private void MonsterAttack(int ID)
+    {
+        if (puzzleManager == null) puzzleManager = FindObjectOfType<PuzzleManager>();
+        if (UserPrivateData.Instance.GetInstanceID() == ID) puzzleManager.SpawnMonster();
+        //print(UserPrivateData.Instance.GetID() + " current id");
+
+    }
+    [PunRPC]
+    private void DonePuzzle(int id)
+    {
+        if (puzzleManager == null) puzzleManager = FindObjectOfType<PuzzleManager>();
+        puzzleManager.PuzzleCompleteHandler(id);
     }
 }

@@ -28,6 +28,9 @@ public class UserPrivateData : MonoBehaviour
         playerRole = role;
     }
     public CharacterManager.Roles GetRole() => playerRole;
+
+    public int GetID() => id;
+
     public void Initialize(int id)
     {
         this.id = id;

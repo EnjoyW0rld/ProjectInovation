@@ -5157,7 +5157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7638bdd413b529342bf45eda970660f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomName: {fileID: 383866734}
+  roomName:
+  - {fileID: 1352723084}
+  - {fileID: 383866734}
   selectionScreen: {fileID: 1283008080}
   readyScreen: {fileID: 827811108}
 --- !u!4 &2134796742

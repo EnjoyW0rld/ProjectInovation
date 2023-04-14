@@ -8,14 +8,24 @@ public class MonsterSteady : MonoBehaviour
     [SerializeField] private RectTransform moveObj;
     [SerializeField] private RectTransform targetObj;
 
+    [SerializeField] private float attackTime = 7;
+    [SerializeField] private float maxTimeOutside = 1;
+    private float currentTimeOutside;
+    private float currentAttackTime;
+
     private Vector2 targetDir = Vector2.zero;
-    [SerializeField] private float halfSize;
-    [SerializeField] private float xMax;
+    private float halfSize;
+    private float xMax;
+
+
 
     private void Start()
     {
         halfSize = targetObj.sizeDelta.x / 2;
         xMax = Camera.main.pixelRect.xMax / 2 - halfSize;
+
+        currentAttackTime = attackTime;
+        currentTimeOutside = 0;
     }
     // Update is called once per frame
     void Update()
@@ -29,11 +39,24 @@ public class MonsterSteady : MonoBehaviour
         targetDir.x += Random.Range(-2f, 2f);
         targetDir.x = Mathf.Clamp(targetDir.x, -2f, 2f);
 
+        currentTimeOutside += Time.deltaTime;
+        currentAttackTime -= Time.deltaTime;
+
         float relative = (moveObj.anchoredPosition - targetObj.anchoredPosition).magnitude;
         if (relative <= halfSize)
         {
-            //print("Inside box");
+            currentTimeOutside = 0;
         }
+        if(currentTimeOutside >= attackTime)
+        {
+            print("YOu failed");
+        }
+        if(currentAttackTime <= 0)
+        {
+            Destroy(this.gameObject);
+        }
+
+
     }
 
     private float RoundToTwo(float value)
