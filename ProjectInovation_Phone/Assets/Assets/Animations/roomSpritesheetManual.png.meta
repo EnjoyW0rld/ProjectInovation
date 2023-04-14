@@ -1,0 +1,2775 @@
+fileFormatVersion: 2
+guid: 8687df7097e12a842865f8b8139567cc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: roomSpritesheetManual_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5067.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7545ee06d03685a45866e78259c6a256
+      internalID: 692009274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_1
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 5067.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53addadcf570044195918ade01c0739
+      internalID: -22174327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_2
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 5067.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7ee01a282c20448a595e404d884ac7
+      internalID: 865492480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_3
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 5067.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20487997604822142aa88f123d9d112d
+      internalID: -1531003227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_4
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 5067.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812be3012173f2746830308f50b3b716
+      internalID: -1508635823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_5
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 5067.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0d328acf97da043b96a4b8f7873634
+      internalID: -197601349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_6
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 5067.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcbd34f57d95a6458e1cdc7bb560be4
+      internalID: -2072365380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_7
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 5067.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebf42b3af9aa0145bbf0b873dd8bfa8
+      internalID: -282630802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4706.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f836f0a40316164fbe75be57bfa891f
+      internalID: -82310684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_9
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 4706.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5bffbac5f4f2f468f9fcd3a160b818
+      internalID: 771385315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_10
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 4706.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25351515ab19cd848977e64997f40c9d
+      internalID: 526659665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_11
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4706.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b356f0dc66b19ad4b93fe8e9256e9877
+      internalID: -380822124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_12
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 4706.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6c0b0a6ddaf614a82fe1069431bcdc
+      internalID: -919755996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_13
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 4706.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9537bde5bfe449d4b85f2992e88718db
+      internalID: 357504647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_14
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4706.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466261efd18af354b89ed4d56c2b74fb
+      internalID: 1757694112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_15
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 4706.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2f614f392137c46b81dc3f6395a39d
+      internalID: 1675435362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4345.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3dbabb06bb1c84cbcb42d75aec1962
+      internalID: -1048723977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_17
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 4345.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4fcfde02500554d86a59fcc8364ae5
+      internalID: 1046242781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_18
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 4345.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e12ccfa546e0b47a72edeaced10362
+      internalID: 720578775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_19
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 4345.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c372cdbb734f6438d6dcc967096148
+      internalID: 1116697181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_20
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 4345.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515da621a21748c4990c18fca5fc18d3
+      internalID: 197411956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_21
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 4345.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876c9b644c97850419108a9706f972e8
+      internalID: -1549745287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_22
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 4345.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8976a277581c74baaa8c74e820da57
+      internalID: -1075598721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_23
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 4345.067
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3212ad382bea9e74db1a81b15fffadcc
+      internalID: 1340213545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3984.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c05866fea1ede244b5f188c2d848a9f
+      internalID: 975755069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_25
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 3984.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c42c0b4e6b7bc7469aa3014159da65a
+      internalID: 174422289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_26
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 3984.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228d8d3f3aaa3f940b877d5c3538a7cd
+      internalID: 1557615138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_27
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3984.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03605abd759c6cc43a44b57f27f468be
+      internalID: -806844278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_28
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 3984.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333ad9eb3ea249d4ea91dad0fcdee37e
+      internalID: 1297490317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_29
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 3984.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493e0a714b4f8504189d23a21a37f95a
+      internalID: 1542383388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_30
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3984.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a22af68ba09002419a35c94ecb94f3c
+      internalID: 1448849170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_31
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 3984.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e5bf1fac9f66f43b66f91236be5d6b
+      internalID: -858347488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3623.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23d28c6725102b45a3f5607832add61
+      internalID: -1405066065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_33
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 3623.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0548f16ae6eac4ab758c9c8bb1f044
+      internalID: 875431812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_34
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 3623.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bccd1df6208e464e8cb0c1a90e3fc65
+      internalID: -664342050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_35
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3623.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7a7ecde57c1e448bdce92702732a14
+      internalID: 2114645342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_36
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 3623.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a21115ba807edd4cab50d1579db053a
+      internalID: 1948058741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_37
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 3623.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6408e5663b81a4eb4fe3d2dff204b0
+      internalID: 226581974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_38
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3623.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6bce33b6962f84b81f6a59dce7a6e4
+      internalID: -1942288452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_39
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 3623.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6deff383680a74cb1955c3bf172933
+      internalID: 1740164090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3262.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a4db5532f9b884ca5c27b41060f1c1
+      internalID: -8303046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_41
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 3262.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036f02fd202f25749925feb6d7ccc337
+      internalID: -104694582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_42
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 3262.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1737ef6928a37234cb543649475278a9
+      internalID: -1595129929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_43
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 3262.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbd7893fd11fb941a4a21cb31042040
+      internalID: -1688589707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_44
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 3262.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93b7db811e1cfc48b2e15d67ac6c633
+      internalID: -1956871651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_45
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 3262.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629a6a3e510c8894cbefe9b85e5e69c6
+      internalID: 1138420930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_46
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 3262.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1bc95c6a171cc44b286c430cc88cde
+      internalID: 1795365068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_47
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 3262.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f23cab8d5fbfbd41ad26863fc4eaeac
+      internalID: 353250614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2901.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f351749b99c2342b9b3f3aee898eca
+      internalID: 1986758535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_49
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 2901.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5183ae2506fc3e43bbbbda9136100ff
+      internalID: -1428641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_50
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 2901.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80ae1a6ccd58c74bb1f80ccff063147
+      internalID: -692046163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_51
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2901.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec9eaf227da2bc458da1ad23eaebc0b
+      internalID: 953733737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_52
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 2901.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f7590a5a2bd7148a5466047547336d
+      internalID: 403588788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_53
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 2901.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024b3d6a52bd8b0478b365af211912e5
+      internalID: 1017804572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_54
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2901.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a076513091677114c85475ee9da4dfaa
+      internalID: 1216145134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_55
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 2901.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d66f1ce121f9864d9fa675146e57cd4
+      internalID: -1013830077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2540.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4533c74ac01607b42b5a996a49df9e46
+      internalID: -1254514746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_57
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 2540.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e6fa7f63dd4b142b188eb6436f04e0
+      internalID: 526465837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_58
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 2540.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa145530ddeefe45a80d8985c3974d2
+      internalID: -1681733443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_59
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2540.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc9d29b7f9de164dab355d7ce1f8ac5
+      internalID: 1071530488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_60
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 2540.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ce8366df40a4d44b121fd6ad60e2de
+      internalID: 1557141645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_61
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 2540.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188420aeb4262164b972f678fd33dd3c
+      internalID: -1871483314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_62
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2540.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3af4bd69ad23084f9baceee3f188e38
+      internalID: -2060018864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_63
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 2540.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc289e6b23cb26140944547f7d3cce95
+      internalID: -503156071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2179.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5af97d6fce6704daf4a4a0dfdef0b0
+      internalID: 8004778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_65
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 2179.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc27919f38431584e8619a5c5d8efd2a
+      internalID: 646561535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_66
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 2179.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97eb179155f771449a319014b1dfcb55
+      internalID: -1601061026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_67
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 2179.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f2b5753b7a43842b5c44d575915c54
+      internalID: -1355021998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_68
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 2179.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea14aca9fc9ef8a498787c545a9c7fa4
+      internalID: -1668862343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_69
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 2179.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed305a1d307efa4b81bd9a979d1b132
+      internalID: -1557850346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_70
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 2179.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd96f10f17facd5418b73a819fc876f1
+      internalID: 1575564193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_71
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 2179.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c097ef200ec81f449b61ccb5df943697
+      internalID: 704796940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1818.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a7971bf3f962843bbf7e27f2587653
+      internalID: 97309395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_73
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1818.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58508508830be34898f316267f2af38
+      internalID: 2041576161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_74
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 1818.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2826edd6415f2f438ca00766d0c8019
+      internalID: 501816829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_75
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1818.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b2e918912bd2642bb8204ff0aeb73b
+      internalID: -205860293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_76
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 1818.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05809a42da0c13c43982bca452362cf7
+      internalID: -144076761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_77
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 1818.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6824237aad6d8e342b63bc2186b1467f
+      internalID: -1522895530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_78
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1818.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d061b78f5851f540bd0ea29fae91a06
+      internalID: -706157141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_79
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 1818.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6025c96c51446f247a925c31548c802e
+      internalID: 1515246109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1457.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b71136934e66424a920ec70ecb8e79d
+      internalID: 713505321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_81
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1457.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2f1150e577c8340819afdda9d80b76
+      internalID: -1393646290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_82
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 1457.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5092720630a671a43bc2d784a9501691
+      internalID: 1898149199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_83
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1457.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555addb49e1f256459137ad444cf9aed
+      internalID: 686500141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_84
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 1457.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6493b41bf18b34e4ab53b3575e8b5c2e
+      internalID: -1851349154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_85
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 1457.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f913911c3dd473840b5dfa23a8696d03
+      internalID: 1662924474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_86
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1457.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2078c0deb05ac341be3d75d6b8b04e5
+      internalID: -1045307629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_87
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 1457.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05be6323c100eb14e858030cc2c0a746
+      internalID: 29115334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1096.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f4986d8b2a10547869ffae0f3caa60
+      internalID: 959121328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_89
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1096.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8137b97b681e89a47862f1e3bfd0495a
+      internalID: 1686705622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_90
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 1096.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a87248f521224245acfb1acaba2bbf6
+      internalID: -2137910526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_91
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 1096.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af3daa53bd13424ab75bfabab9fdf4d
+      internalID: 1336437226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_92
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 1096.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b3a6c86e0576c44b6a269a24c33d26
+      internalID: 231250930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_93
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 1096.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9614aa3cfee8e409a42aee665b8c57
+      internalID: 92576075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_94
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1096.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a0d85c7dad19447a7013584c4445c6
+      internalID: 1380881798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_95
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 1096.0667
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507805249b7d747408a181023a05eae7
+      internalID: 351107099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 735.06665
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00dd35b0c50661541b1e6153fed3e80a
+      internalID: -286569706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_97
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 735.06665
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d5f44ddabd13846a573ff84a2152ab
+      internalID: 807388847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_98
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 735.06665
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a9b3f1e77754a4fba1b54b1a0d4046
+      internalID: 1802308995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_99
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 735.06665
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee398540673f9443947b790bcea10bf
+      internalID: 649668803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_100
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 735.06665
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29c3e811dcf9fb49b3681efd8a2553c
+      internalID: 2070084702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_101
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 735.06665
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5667b0c2536f24478f2b97e6336d878
+      internalID: 417221009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_102
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 735.06665
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33effefc0af742a4f8cc32fe49721209
+      internalID: -1941380640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_103
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 735.06665
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba99e8116d65374439c90dc344dcecf0
+      internalID: 1195885946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374.06668
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123feff650842ba45b2aa528dba0c673
+      internalID: 291511716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_105
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 374.06668
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b681c4b9f5dcf8f43b106022554a56ba
+      internalID: 637006002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_106
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 374.06668
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58758bff8b1634d4bb2ff1717ae4c855
+      internalID: 1670812577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_107
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 374.06668
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa65442b24c36944a77a8817923af48
+      internalID: -1637962668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_108
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 374.06668
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b831eb74b9c6d4ba69d603199c0ce5
+      internalID: -861164792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_109
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 374.06668
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a404069cee6404e438f6cf40fafcbea1
+      internalID: 1728384156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_110
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 374.06668
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f85a0757521cd4e8adb8fa42e8984d
+      internalID: 917121846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_111
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 374.06668
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357d9a7410a430348ad4ea5a6dd012e8
+      internalID: 1806362440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13.066681
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fe961ec0a5d074183e61f67ffa0031
+      internalID: -1283452473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_113
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 13.066681
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b166b0adb42217c4fa759d6df2bd4d8e
+      internalID: -648801152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_114
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 13.066681
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93df2bf93b9a93d4cbf1f5dd6867c484
+      internalID: 1396241788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_115
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 13.066681
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb22a93d588ec243875f5ae937fdc24
+      internalID: 696971110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_116
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 13.066681
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa5f9c25bed7804980e171fa89d4eee
+      internalID: 530518483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_117
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 13.066681
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec97d54d5d1d6c44803f054c98d0361
+      internalID: -1304284059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_118
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 13.066681
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164d757f898fa6646bbadd2712f3de45
+      internalID: 1504496442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roomSpritesheetManual_119
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 13.066681
+        width: 642.125
+        height: 361.93332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f42b294732a5b444a4dd10dba056766
+      internalID: 1310956662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      roomSpritesheetManual_34: -664342050
+      roomSpritesheetManual_80: 713505321
+      roomSpritesheetManual_92: 231250930
+      roomSpritesheetManual_20: 197411956
+      roomSpritesheetManual_102: -1941380640
+      roomSpritesheetManual_76: -144076761
+      roomSpritesheetManual_7: -282630802
+      roomSpritesheetManual_81: -1393646290
+      roomSpritesheetManual_17: 1046242781
+      roomSpritesheetManual_66: -1601061026
+      roomSpritesheetManual_37: 226581974
+      roomSpritesheetManual_55: -1013830077
+      roomSpritesheetManual_109: 1728384156
+      roomSpritesheetManual_16: -1048723977
+      roomSpritesheetManual_111: 1806362440
+      roomSpritesheetManual_116: 530518483
+      roomSpritesheetManual_58: -1681733443
+      roomSpritesheetManual_77: -1522895530
+      roomSpritesheetManual_52: 403588788
+      roomSpritesheetManual_47: 353250614
+      roomSpritesheetManual_65: 646561535
+      roomSpritesheetManual_71: 704796940
+      roomSpritesheetManual_21: -1549745287
+      roomSpritesheetManual_40: -8303046
+      roomSpritesheetManual_107: -1637962668
+      roomSpritesheetManual_114: 1396241788
+      roomSpritesheetManual_75: -205860293
+      roomSpritesheetManual_38: -1942288452
+      roomSpritesheetManual_1: -22174327
+      roomSpritesheetManual_72: 97309395
+      roomSpritesheetManual_94: 1380881798
+      roomSpritesheetManual_117: -1304284059
+      roomSpritesheetManual_44: -1956871651
+      roomSpritesheetManual_27: -806844278
+      roomSpritesheetManual_35: 2114645342
+      roomSpritesheetManual_88: 959121328
+      roomSpritesheetManual_98: 1802308995
+      roomSpritesheetManual_108: -861164792
+      roomSpritesheetManual_79: 1515246109
+      roomSpritesheetManual_2: 865492480
+      roomSpritesheetManual_105: 637006002
+      roomSpritesheetManual_73: 2041576161
+      roomSpritesheetManual_14: 1757694112
+      roomSpritesheetManual_115: 696971110
+      roomSpritesheetManual_12: -919755996
+      roomSpritesheetManual_69: -1557850346
+      roomSpritesheetManual_85: 1662924474
+      roomSpritesheetManual_63: -503156071
+      roomSpritesheetManual_67: -1355021998
+      roomSpritesheetManual_61: -1871483314
+      roomSpritesheetManual_19: 1116697181
+      roomSpritesheetManual_83: 686500141
+      roomSpritesheetManual_46: 1795365068
+      roomSpritesheetManual_62: -2060018864
+      roomSpritesheetManual_93: 92576075
+      roomSpritesheetManual_110: 917121846
+      roomSpritesheetManual_3: -1531003227
+      roomSpritesheetManual_56: -1254514746
+      roomSpritesheetManual_11: -380822124
+      roomSpritesheetManual_42: -1595129929
+      roomSpritesheetManual_25: 174422289
+      roomSpritesheetManual_8: -82310684
+      roomSpritesheetManual_106: 1670812577
+      roomSpritesheetManual_82: 1898149199
+      roomSpritesheetManual_101: 417221009
+      roomSpritesheetManual_60: 1557141645
+      roomSpritesheetManual_24: 975755069
+      roomSpritesheetManual_54: 1216145134
+      roomSpritesheetManual_84: -1851349154
+      roomSpritesheetManual_45: 1138420930
+      roomSpritesheetManual_48: 1986758535
+      roomSpritesheetManual_100: 2070084702
+      roomSpritesheetManual_15: 1675435362
+      roomSpritesheetManual_89: 1686705622
+      roomSpritesheetManual_4: -1508635823
+      roomSpritesheetManual_50: -692046163
+      roomSpritesheetManual_43: -1688589707
+      roomSpritesheetManual_90: -2137910526
+      roomSpritesheetManual_95: 351107099
+      roomSpritesheetManual_97: 807388847
+      roomSpritesheetManual_26: 1557615138
+      roomSpritesheetManual_49: -1428641
+      roomSpritesheetManual_10: 526659665
+      roomSpritesheetManual_51: 953733737
+      roomSpritesheetManual_59: 1071530488
+      roomSpritesheetManual_68: -1668862343
+      roomSpritesheetManual_113: -648801152
+      roomSpritesheetManual_31: -858347488
+      roomSpritesheetManual_78: -706157141
+      roomSpritesheetManual_0: 692009274
+      roomSpritesheetManual_22: -1075598721
+      roomSpritesheetManual_91: 1336437226
+      roomSpritesheetManual_30: 1448849170
+      roomSpritesheetManual_39: 1740164090
+      roomSpritesheetManual_28: 1297490317
+      roomSpritesheetManual_53: 1017804572
+      roomSpritesheetManual_112: -1283452473
+      roomSpritesheetManual_29: 1542383388
+      roomSpritesheetManual_18: 720578775
+      roomSpritesheetManual_9: 771385315
+      roomSpritesheetManual_57: 526465837
+      roomSpritesheetManual_70: 1575564193
+      roomSpritesheetManual_74: 501816829
+      roomSpritesheetManual_103: 1195885946
+      roomSpritesheetManual_13: 357504647
+      roomSpritesheetManual_99: 649668803
+      roomSpritesheetManual_36: 1948058741
+      roomSpritesheetManual_86: -1045307629
+      roomSpritesheetManual_23: 1340213545
+      roomSpritesheetManual_119: 1310956662
+      roomSpritesheetManual_5: -197601349
+      roomSpritesheetManual_87: 29115334
+      roomSpritesheetManual_41: -104694582
+      roomSpritesheetManual_118: 1504496442
+      roomSpritesheetManual_64: 8004778
+      roomSpritesheetManual_96: -286569706
+      roomSpritesheetManual_6: -2072365380
+      roomSpritesheetManual_104: 291511716
+      roomSpritesheetManual_33: 875431812
+      roomSpritesheetManual_32: -1405066065
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

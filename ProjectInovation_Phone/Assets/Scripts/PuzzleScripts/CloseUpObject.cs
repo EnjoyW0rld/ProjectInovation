@@ -19,7 +19,22 @@ public class CloseUpObject : MonoBehaviour, IPointerClickHandler
         else
         {
             GameObject o = Instantiate(target, Vector3.zero, Quaternion.identity, transform.parent);
-            o.GetComponentInChildren<Image>().sprite = hint;
+            //o.GetComponentInChildren<Image>().sprite = hint;
+            
+            
+            var imgs = o.GetComponentsInChildren<Image>();
+            print(imgs.Length); 
+            for (int i = 0; i < imgs.Length; i++)
+            {
+
+                if (imgs[i].tag == "hintImage")
+                {
+                    imgs[i].sprite = hint;
+                    break;
+                }
+            }
+
+             
             Debug.Log("Clicked on object");
         }
     }

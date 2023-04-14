@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class preserveToggleSequence : MonoBehaviour
+public class preserveToggleSequence : TaskGeneral
 {
     [SerializeField]
     private Sprite[] ovenButtons_Sprites;
