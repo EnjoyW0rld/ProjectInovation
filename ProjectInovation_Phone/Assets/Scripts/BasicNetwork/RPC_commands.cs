@@ -10,6 +10,7 @@ public class RPC_commands : MonoBehaviour
 
 
     private ReadyHandler readyHandler;
+    private RoomManager roomManager;
 
     [PunRPC]
     private void UpdateSprite(int ID, int role)
@@ -25,6 +26,12 @@ public class RPC_commands : MonoBehaviour
         readyHandler.UpdateReady(ID);
         print(ID);
     }
+    [PunRPC]
+    private void UpdateOccupied(int role)
+    {
+        if (roomManager == null) roomManager = FindObjectOfType<RoomManager>();
+        roomManager.OccupyRole(role);
+    }
 
     [PunRPC]
     private void Ping(string text)
@@ -32,6 +39,9 @@ public class RPC_commands : MonoBehaviour
         Debug.Log(text);
     }
 
+    //Commands for puzzle games
+    //------------------------------------------
+    
     PuzzleManager puzzleManager;
 
     [PunRPC]
@@ -48,4 +58,10 @@ public class RPC_commands : MonoBehaviour
         if (puzzleManager == null) puzzleManager = FindObjectOfType<PuzzleManager>();
         puzzleManager.PuzzleCompleteHandler(id);
     }
+    [PunRPC]
+    private void ChangeToLobby()
+    {
+
+    }
+
 }

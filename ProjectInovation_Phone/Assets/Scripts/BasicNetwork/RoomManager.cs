@@ -15,6 +15,18 @@ public class RoomManager : MonoBehaviourPunCallbacks
     [SerializeField] private GameObject readyScreen;
     private PlayerData myView;
 
+    private List<CharacterManager.Roles> takenRoles = new List<CharacterManager.Roles>();
+    /*
+    private void Awake()
+    {
+        freeRoles = new List<CharacterManager.Roles>() { 
+            CharacterManager.Roles.Engineer,
+            CharacterManager.Roles.Analyst,
+            CharacterManager.Roles.Chemist,
+            CharacterManager.Roles.Mechanic
+        };
+    }
+     */
 
     void Start()
     {
@@ -41,6 +53,8 @@ public class RoomManager : MonoBehaviourPunCallbacks
         myView.SetRole(role);
         selectionScreen.SetActive(false);
 
+        myView.View.RPC("UpdateOccupied", RpcTarget.All, (int)role.role); //Occupy role
+
         readyScreen.SetActive(true);
         myView.View.RPC("UpdateSprite", RpcTarget.All, myView.ID, (int)myView.GetRole());
         //readyScreen.GetComponent<ReadyHandler>().SetImage(myView.ID, myView.GetSprite());
@@ -51,16 +65,38 @@ public class RoomManager : MonoBehaviourPunCallbacks
         if (myView.ChoseRole())
             myView.View.RPC("UpdateSprite", RpcTarget.All, myView.ID, (int)myView.GetRole());
 
+        if (PhotonNetwork.IsMasterClient)
+        {
+            for (int i = 0; i < takenRoles.Count; i++)
+            {
+                myView.View.RPC("UpdateOccupied", newPlayer, (int)takenRoles[i]);
+            }
+        }
+
         base.OnPlayerEnteredRoom(newPlayer);
     }
 
-    //Get functions
-    public int GetID() => myView.GetComponent<PlayerData>().ID;
-    public PlayerData GetPlayerData() => myView;
+    public void OccupyRole(int role)
+    {
+        takenRoles.Add((CharacterManager.Roles)role);
+        print("RoleOccupied " + (CharacterManager.Roles)role);
+    }
     public void StartGame()
     {
         PhotonNetwork.LoadLevel("GameScreen");
     }
+    //Get functions
+    public bool isRoleTaken(CharacterManager.Roles role)
+    {
+        return takenRoles.Contains(role);
+
+    }
+    public bool isRoleTaken(int role)
+    {
+        return takenRoles.Contains((CharacterManager.Roles)role);
+    }
+    public int GetID() => myView.GetComponent<PlayerData>().ID;
+    public PlayerData GetPlayerData() => myView;
 
 }
 

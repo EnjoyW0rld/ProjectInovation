@@ -7,29 +7,49 @@ using UnityEngine.UI;
 
 public class CharacterManager : MonoBehaviour
 {
-    const int CHARACTER_COUNT = 1;
+    //const int CHARACTER_COUNT = 1;
     public enum Roles { Engineer = 0, Chemist = 1, Analyst = 2, Mechanic = 3 }
-    [SerializeField] private RoleSprites[] _characterSprites;// = new RoleSprites[CHARACTER_COUNT];
+    private RoleSprites[] _characterSprites;// = new RoleSprites[CHARACTER_COUNT];
     [SerializeField] private Image image;
     private Roles role;
     [HideInInspector] public UnityEvent<RoleSprites> OnSelected;
+    private RoomManager roomManager;
 
     void Start()
     {
+        roomManager = FindObjectOfType<RoomManager>();
         _characterSprites = SpritePool.Instance.GetAllRoles();
         role = 0;
     }
 
     public void ScrollNext()
     {
-        if ((int)role == _characterSprites.Length - 1) role = 0;
-        else role++;
+        if ((int)role == _characterSprites.Length - 1)
+        {
+            role = 0;
+        }
+        else
+        {
+            role++;
+        }
+
+        if (roomManager.isRoleTaken(role))
+        {
+            ScrollNext();
+            return;
+        }
         UpdateSprite();
     }
     public void ScrollBack()
     {
         if ((int)role == 0) role = (Roles)_characterSprites.Length - 1;
         else role--;
+
+        if (roomManager.isRoleTaken(role))
+        {
+            ScrollNext();
+            return;
+        }
         UpdateSprite();
     }
 
@@ -51,6 +71,11 @@ public class CharacterManager : MonoBehaviour
         {
             if (role == _characterSprites[i].role)
             {
+                if (roomManager.isRoleTaken(role))
+                {
+                    ScrollNext();
+                    return;
+                }
                 UserPrivateData.Instance.SetRole(role);
                 OnSelected?.Invoke(_characterSprites[i]);
                 break;
@@ -58,7 +83,7 @@ public class CharacterManager : MonoBehaviour
 
         }
     }
-
+    /*
     private void OnValidate()
     {
 
@@ -72,12 +97,13 @@ public class CharacterManager : MonoBehaviour
             _characterSprites = sp;
         }
     }
+     */
 
     public Sprite GetSpriteByRole(Roles role)
     {
         for (int i = 0; i < _characterSprites.Length; i++)
         {
-            if(role == _characterSprites[i].role) return _characterSprites[i]._sprite;
+            if (role == _characterSprites[i].role) return _characterSprites[i]._sprite;
         }
         return null;
     }

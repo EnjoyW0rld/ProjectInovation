@@ -46,6 +46,8 @@ MonoBehaviour:
   - UpdateReady
   - MonsterAttack
   - DonePuzzle
+  - ChangeToLobby
+  - UpdateOccupied
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

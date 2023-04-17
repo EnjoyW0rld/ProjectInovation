@@ -5,12 +5,13 @@ using Photon.Pun;
 
 public class PuzzleManager : MonoBehaviour
 {
-    private PlayerData playerData;
+    //private PlayerData playerData;
     private PhotonView view;
     [SerializeField] private Transform canvas;
     [SerializeField] private PuzzleRoom[] rooms;
+    [SerializeField] private GameObject lobbyRoomPrefab;
     [SerializeField] private GameObject monsterAttack;
-
+    //Debug variables
     [SerializeField] private CharacterManager.Roles roleToShow;
     [SerializeField] private bool isDebug;
 
@@ -28,6 +29,12 @@ public class PuzzleManager : MonoBehaviour
         {
             timeTillMonsterAttack = timeBetweenAttacks;
         }
+        //REMOVE AFTER, ONLY FOR DEBUG OF LOBBY
+        /**
+        Instantiate(lobbyRoomPrefab, canvas);
+        return;
+        /**/
+        //-----
 
         for (int i = 0; i < rooms.Length; i++)
         {
@@ -55,8 +62,16 @@ public class PuzzleManager : MonoBehaviour
             {
                 //int id = Random.Range(0, 1);
                 print("time for monster");
-                view.RPC("MonsterAttack", RpcTarget.All, 1);
-                timeTillMonsterAttack = timeBetweenAttacks;
+                if (isDebug)
+                {
+                    SpawnMonster();
+                    timeTillMonsterAttack = timeBetweenAttacks;
+                }
+                else
+                {
+                    view.RPC("MonsterAttack", RpcTarget.All, 0);
+                    timeTillMonsterAttack = timeBetweenAttacks;
+                }
             }
             else
             {
@@ -67,9 +82,14 @@ public class PuzzleManager : MonoBehaviour
 
     public void SpawnMonster()
     {
-        Instantiate(monsterAttack, canvas);
+        MonsterSteady attack = Instantiate(monsterAttack, canvas).GetComponent<MonsterSteady>();
+        attack.OnFailed.AddListener(FailedMonsterAttack);
     }
 
+    private void FailedMonsterAttack()
+    {
+
+    }
     public void OnPuzzleDone()
     {
         view.RPC("DonePuzzle", RpcTarget.MasterClient, UserPrivateData.Instance.GetInstanceID());
@@ -77,12 +97,14 @@ public class PuzzleManager : MonoBehaviour
 
     public void PuzzleCompleteHandler(int id)
     {
+        print("Done puzzle");
         puzzlesDone++;
         if (PhotonNetwork.IsMasterClient)
         {
             if (puzzlesDone == 4)
             {
-                PhotonNetwork.LoadLevel("Menu");
+                view.RPC("ChangeToLobby", RpcTarget.All);
+                //PhotonNetwork.LoadLevel("Menu");
             }
         }
     }

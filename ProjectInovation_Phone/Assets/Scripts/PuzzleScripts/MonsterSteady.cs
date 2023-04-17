@@ -1,15 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class MonsterSteady : MonoBehaviour
 {
+    [Header("Transforms")]
     [SerializeField] private RectTransform moveObj;
     [SerializeField] private RectTransform targetObj;
 
+    [Header("Speed variables")]
+    [SerializeField] private float playerSpeed;
+    [SerializeField] private float barSpeed;
+
+    [Header("Time variables")]
     [SerializeField] private float attackTime = 7;
     [SerializeField] private float maxTimeOutside = 1;
+    [HideInInspector] public UnityEvent OnFailed;
+
     private float currentTimeOutside;
     private float currentAttackTime;
 
@@ -31,9 +40,10 @@ public class MonsterSteady : MonoBehaviour
     void Update()
     {
         float dirX = RoundToTwo(Input.acceleration.x);
-        moveObj.position += new Vector3(dirX, 0, 0);
+        moveObj.position += new Vector3(dirX * Time.deltaTime * playerSpeed, 0, 0);
 
-        targetObj.anchoredPosition += targetDir;
+
+        targetObj.anchoredPosition += targetDir * Time.deltaTime * barSpeed;
         targetObj.anchoredPosition = new Vector3(Mathf.Clamp(targetObj.anchoredPosition.x, -xMax, xMax), 0, 0);
 
         targetDir.x += Random.Range(-2f, 2f);
@@ -47,16 +57,18 @@ public class MonsterSteady : MonoBehaviour
         {
             currentTimeOutside = 0;
         }
-        if(currentTimeOutside >= attackTime)
+        //Check if player failed
+        if (currentTimeOutside >= maxTimeOutside)
         {
+            OnFailed?.Invoke();
             print("YOu failed");
+            Destroy(this.gameObject);
         }
-        if(currentAttackTime <= 0)
+        //Check if player done!
+        if (currentAttackTime <= 0)
         {
             Destroy(this.gameObject);
         }
-
-
     }
 
     private float RoundToTwo(float value)

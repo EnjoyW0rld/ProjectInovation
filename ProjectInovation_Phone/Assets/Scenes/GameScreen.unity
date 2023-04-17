@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 528013683}
   - component: {fileID: 528013685}
   - component: {fileID: 528013684}
+  - component: {fileID: 528013686}
   m_Layer: 5
   m_Name: timer
   m_TagString: Untagged
@@ -284,7 +285,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528013682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -335,6 +336,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528013682}
   m_CullTransparentMesh: 1
+--- !u!114 &528013686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528013682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c2dd4d167386f4caad0d96c9e2dc29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameTime: 60
+  text: {fileID: 421480763}
 --- !u!1 &647944742
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,9 +672,10 @@ MonoBehaviour:
   - {fileID: 7210843671456573945, guid: 57c348f1b981b6842a6bde7ca70d6920, type: 3}
   - {fileID: 4231700450313923383, guid: b1443927dffd0094fa41d613ce4184a2, type: 3}
   - {fileID: 3185417318497261959, guid: 91475c3124611e7499245a3cafa0e55a, type: 3}
-  monsterAttack: {fileID: 0}
+  lobbyRoomPrefab: {fileID: 7210843671456573947, guid: 40643eeba3a3ad7409d63630724c6452, type: 3}
+  monsterAttack: {fileID: 5805984212724060986, guid: c9e4212e64bafbe42b1c8155f48e04ba, type: 3}
   roleToShow: 0
-  isDebug: 0
+  isDebug: 1
   timeBetweenAttacks: 15
 --- !u!4 &1606346401
 Transform:

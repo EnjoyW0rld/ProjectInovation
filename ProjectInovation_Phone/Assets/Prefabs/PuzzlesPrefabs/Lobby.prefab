@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 2503013439553321039}
   - component: {fileID: 2720853136300276449}
   - component: {fileID: 6412438065826097742}
+  - component: {fileID: 765809634103384915}
   m_Layer: 5
   m_Name: Screen
   m_TagString: Untagged
@@ -188,6 +189,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &765809634103384915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2745851864285365382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa42bd88c1545ee41a6a99d611d8e941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3033769984295724941
 GameObject:
   m_ObjectHideFlags: 0
