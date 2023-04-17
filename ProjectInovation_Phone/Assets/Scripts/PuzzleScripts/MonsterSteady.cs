@@ -19,7 +19,7 @@ public class MonsterSteady : MonoBehaviour
     [Header("Time variables")]
     [SerializeField] private float attackTime = 7;
     [SerializeField] private float maxTimeOutside = 1;
-    [HideInInspector] public UnityEvent OnFailed;
+    public UnityEvent OnFailed;
 
     private float currentTimeOutside;
     private float currentAttackTime;
@@ -28,7 +28,7 @@ public class MonsterSteady : MonoBehaviour
     private float halfSize;
     private float xMax;
 
-
+    private bool failed;
 
     private void Start()
     {
@@ -38,7 +38,7 @@ public class MonsterSteady : MonoBehaviour
         currentAttackTime = attackTime;
         currentTimeOutside = 0;
     }
-    // Update is called once per frame
+
     void Update()
     {
         float dirX = RoundToTwo(Input.acceleration.x);
@@ -62,12 +62,12 @@ public class MonsterSteady : MonoBehaviour
         //Check if player failed
         if (currentTimeOutside >= maxTimeOutside)
         {
+            print("you failed");
             OnFailed?.Invoke();
-            print("YOu failed");
-            Destroy(this.gameObject);
+            failed = true;
         }
         //Check if player done!
-        if (currentAttackTime <= 0)
+        if (currentAttackTime <= 0 && !failed)
         {
             Destroy(this.gameObject);
         }

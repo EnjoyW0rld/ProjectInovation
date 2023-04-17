@@ -352,6 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7862121621164987147}
   - component: {fileID: 5320025395832435457}
+  - component: {fileID: 886784022159153826}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -403,12 +404,29 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
   m_VideoShaders: []
+--- !u!114 &886784022159153826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5102778809736385919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a96ca2eb4234d84ba7913117645af15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPlayer: {fileID: 5320025395832435457}
+  playerTarget: {fileID: 6421869869664903117}
+  OnVideoEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5472463242923429743
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,7 +687,19 @@ MonoBehaviour:
   maxTimeOutside: 2
   OnFailed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8711521505324112007}
+        m_TargetAssemblyTypeName: TimelineReplacer, Assembly-CSharp
+        m_MethodName: SetSecond
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!223 &1058234741103999175
 Canvas:
   m_ObjectHideFlags: 0
@@ -713,7 +743,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &8054821369522788436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,6 +847,7 @@ GameObject:
   - component: {fileID: 5541162132807858895}
   - component: {fileID: 2735217096859316575}
   - component: {fileID: 8804870366116332890}
+  - component: {fileID: 8711521505324112007}
   m_Layer: 6
   m_Name: monster
   m_TagString: Untagged
@@ -954,7 +985,22 @@ PlayableDirector:
   - key: {fileID: 7860196261735858332, guid: 5de37044abb440f488e36157c033f4d4, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - 986506dae5add2f4f9e2ad38ec667520: {fileID: 6513855086230515389}
+--- !u!114 &8711521505324112007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6513855086230515389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880ea95eb85836d4da41f43bdd21911d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  second: {fileID: 11400000, guid: 5de37044abb440f488e36157c033f4d4, type: 2}
+  director: {fileID: 8804870366116332890}
 --- !u!1 &8008829670024067917
 GameObject:
   m_ObjectHideFlags: 0

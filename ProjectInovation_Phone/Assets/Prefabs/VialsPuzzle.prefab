@@ -300,7 +300,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnComplete:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5865976189051051415}
+        m_TargetAssemblyTypeName: TaskGeneral, Assembly-CSharp
+        m_MethodName: SetComplete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   vials:
   - {fileID: 1174221140025506230}
   - {fileID: 1347032657372577276}
