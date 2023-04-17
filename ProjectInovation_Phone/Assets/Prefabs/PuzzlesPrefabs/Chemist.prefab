@@ -34,7 +34,7 @@ RectTransform:
   m_Children:
   - {fileID: 7538123248427121068}
   m_Father: {fileID: 819774230777939328}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -181,7 +181,7 @@ Transform:
   m_Children:
   - {fileID: 4560250718798350759}
   m_Father: {fileID: 819774230777939328}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5426043405820122226
 MonoBehaviour:
@@ -334,7 +334,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 819774230777939328}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -447,6 +447,7 @@ RectTransform:
   - {fileID: 4823586626707286961}
   - {fileID: 1194020357442944161}
   - {fileID: 7148683465716265538}
+  - {fileID: 3223853394091148936}
   - {fileID: 9113610457945374323}
   - {fileID: 2760563936717841390}
   - {fileID: 2271951925032854011}
@@ -834,7 +835,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 819774230777939328}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -930,7 +931,7 @@ Transform:
   m_Children:
   - {fileID: 2141640993379639955}
   m_Father: {fileID: 819774230777939328}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2832819644053266442
 AudioSource:
@@ -1059,7 +1060,7 @@ Transform:
   m_Children:
   - {fileID: 5925027355638686843}
   m_Father: {fileID: 819774230777939328}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2309346502263122776
 AudioSource:
@@ -1287,7 +1288,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 819774230777939328}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &6506087234810825745
 AudioSource:
@@ -1669,16 +1670,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4948282236129374850}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -17.452076}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7210843671456573944}
-  m_RootOrder: 2
+  m_Father: {fileID: 819774230777939328}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -507.51514, y: -100}
+  m_AnchoredPosition: {x: -619.2427, y: -84.991455}
   m_SizeDelta: {x: 599.0315, y: 354.87}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5777999169785246404
@@ -1899,7 +1900,7 @@ RectTransform:
   m_Children:
   - {fileID: 5657515233936278318}
   m_Father: {fileID: 819774230777939328}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2221,7 +2222,6 @@ RectTransform:
   m_Children:
   - {fileID: 6806358663826110931}
   - {fileID: 819774230777939328}
-  - {fileID: 3223853394091148936}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2392,7 +2392,7 @@ RectTransform:
   m_Children:
   - {fileID: 6831644675592697378}
   m_Father: {fileID: 819774230777939328}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
