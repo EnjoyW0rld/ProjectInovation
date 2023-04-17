@@ -664,6 +664,7 @@ MonoBehaviour:
   targetObj: {fileID: 5805984212668146753}
   playerSpeed: 100
   barSpeed: 150
+  maxBarSpeed: 2
   attackTime: 7
   maxTimeOutside: 2
   OnFailed:
@@ -712,7 +713,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &8054821369522788436
 MonoBehaviour:
   m_ObjectHideFlags: 0
