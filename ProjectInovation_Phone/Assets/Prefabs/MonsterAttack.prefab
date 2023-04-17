@@ -278,7 +278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8489174265393400165
 RectTransform:
   m_ObjectHideFlags: 0
@@ -427,6 +427,7 @@ MonoBehaviour:
   OnVideoEnd:
     m_PersistentCalls:
       m_Calls: []
+  play: 0
 --- !u!1 &5472463242923429743
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +683,7 @@ MonoBehaviour:
   targetObj: {fileID: 5805984212668146753}
   playerSpeed: 100
   barSpeed: 150
-  maxBarSpeed: 2
+  maxBarSpeed: 37.79
   attackTime: 7
   maxTimeOutside: 2
   OnFailed:
@@ -743,7 +744,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &8054821369522788436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -978,12 +979,12 @@ PlayableDirector:
     value: {fileID: 0}
   - key: {fileID: 6343977346604032399, guid: 0f8ece86a99fefb4a8fd74530d79dc5b, type: 2}
     value: {fileID: 0}
-  - key: {fileID: -3763520785998567922, guid: 5de37044abb440f488e36157c033f4d4, type: 2}
-    value: {fileID: 2735217096859316575}
   - key: {fileID: -1723957932497411469, guid: 5de37044abb440f488e36157c033f4d4, type: 2}
     value: {fileID: 0}
   - key: {fileID: 7860196261735858332, guid: 5de37044abb440f488e36157c033f4d4, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 1299840668897055404, guid: 5de37044abb440f488e36157c033f4d4, type: 2}
+    value: {fileID: 2735217096859316575}
   m_ExposedReferences:
     m_References:
     - 986506dae5add2f4f9e2ad38ec667520: {fileID: 6513855086230515389}
@@ -1001,6 +1002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   second: {fileID: 11400000, guid: 5de37044abb440f488e36157c033f4d4, type: 2}
   director: {fileID: 8804870366116332890}
+  waitTime: 1.58
 --- !u!1 &8008829670024067917
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,9 @@ public class MyVideoPlayer : MonoBehaviour
 
     [SerializeField] private UnityEvent OnVideoEnd;
     private bool invoked;
+    public bool play;
+    private bool started;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +30,12 @@ public class MyVideoPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (play && !started)
+        {
+            started = true;
+            Play();
+        }
+
         if (!videoPlayer.isPlaying && videoPlayer.frame > 5)
         {
             if (!invoked)
