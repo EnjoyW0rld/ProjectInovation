@@ -122,6 +122,7 @@ public class PuzzleManager : MonoBehaviour
     }
     public void OnPuzzleDone()
     {
+        currentRoom.GetComponent<PuzzleRoom>().OnComplete?.Invoke();
         view.RPC("DonePuzzle", RpcTarget.MasterClient, UserPrivateData.Instance.GetID());
     }
 
