@@ -62,6 +62,7 @@ public class ButtonsPress : TaskGeneral
                 print("Done!");
                 correctSound.Play();
                 backgroundImg.sprite = correctSprite;
+                OnComplete?.Invoke();
             }
         }
         else

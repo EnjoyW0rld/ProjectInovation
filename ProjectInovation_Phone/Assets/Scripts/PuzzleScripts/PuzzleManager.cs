@@ -11,6 +11,8 @@ public class PuzzleManager : MonoBehaviour
     [SerializeField] private PuzzleRoom[] rooms;
     [SerializeField] private GameObject lobbyRoomPrefab;
     [SerializeField] private GameObject monsterAttack;
+    private GameObject currentRoom;
+
     //Debug variables
     [SerializeField] private CharacterManager.Roles roleToShow;
     [SerializeField] private bool isDebug;
@@ -18,6 +20,8 @@ public class PuzzleManager : MonoBehaviour
     [SerializeField] private float timeBetweenAttacks = 15;
     private float timeTillMonsterAttack;
     private int puzzlesDone;
+    private List<int> completeIDs = new List<int>();
+    private bool isGameFinished;
 
     private void Awake()
     {
@@ -42,14 +46,15 @@ public class PuzzleManager : MonoBehaviour
             {
                 if (rooms[i].GetOwner() == roleToShow)
                 {
-                    Instantiate(rooms[i], canvas);
+                    currentRoom = Instantiate(rooms[i], canvas).gameObject;
                 }
             }
             else
             {
                 if (rooms[i].GetOwner() == UserPrivateData.Instance.GetRole())
                 {
-                    Instantiate(rooms[i], canvas);
+                    currentRoom = Instantiate(rooms[i], canvas).gameObject;
+                    currentRoom.transform.SetSiblingIndex(0);
                 }
             }
         }
@@ -69,6 +74,7 @@ public class PuzzleManager : MonoBehaviour
                 }
                 else
                 {
+                    print("this person id " + UserPrivateData.Instance.GetID());
                     view.RPC("MonsterAttack", RpcTarget.All, 0);
                     timeTillMonsterAttack = timeBetweenAttacks;
                 }
@@ -78,6 +84,12 @@ public class PuzzleManager : MonoBehaviour
                 timeTillMonsterAttack -= Time.deltaTime;
             }
         }
+
+        //DEBUG SETTING REMOVE
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            ChangeToLobby();
+        }
     }
 
     public void SpawnMonster()
@@ -85,18 +97,23 @@ public class PuzzleManager : MonoBehaviour
         MonsterSteady attack = Instantiate(monsterAttack, canvas).GetComponent<MonsterSteady>();
         attack.OnFailed.AddListener(FailedMonsterAttack);
     }
-
-
-
+    /// <summary>
+    /// When you want to finish the game call this method
+    /// </summary>
+    /// <param name="won"></param>
     public void BroadcastFinish(bool won)
     {
-        view.RPC("GameFinish",RpcTarget.All, won);
+        view.RPC("GameFinish", RpcTarget.All, won);
     }
     //Set win state in singleton and change scene
     public void FinishTheGame(bool won)
     {
         UserPrivateData.Instance.SetWonState(won);
-        if (PhotonNetwork.IsMasterClient) PhotonNetwork.LoadLevel("EndScreen");
+        if (PhotonNetwork.IsMasterClient && !isGameFinished)
+        {
+            isGameFinished = true;
+            PhotonNetwork.LoadLevel("EndScreen");
+        }
     }
     //IMplement monster fail behaviour here
     private void FailedMonsterAttack()
@@ -105,20 +122,28 @@ public class PuzzleManager : MonoBehaviour
     }
     public void OnPuzzleDone()
     {
-        view.RPC("DonePuzzle", RpcTarget.MasterClient, UserPrivateData.Instance.GetInstanceID());
+        view.RPC("DonePuzzle", RpcTarget.MasterClient, UserPrivateData.Instance.GetID());
     }
 
     public void PuzzleCompleteHandler(int id)
     {
-        print("Done puzzle");
+        if (completeIDs.Contains(id)) return;
         puzzlesDone++;
+        completeIDs.Add(id);
         if (PhotonNetwork.IsMasterClient)
         {
-            if (puzzlesDone == 4)
+            print("current puzzle count " + puzzlesDone);
+            if (puzzlesDone == 2)
             {
                 view.RPC("ChangeToLobby", RpcTarget.All);
                 //PhotonNetwork.LoadLevel("Menu");
             }
         }
+    }
+    //Set everyone room to lobby
+    public void ChangeToLobby()
+    {
+        currentRoom.SetActive(false);
+        Instantiate(lobbyRoomPrefab, canvas);
     }
 }

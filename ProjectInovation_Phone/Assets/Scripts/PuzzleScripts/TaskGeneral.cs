@@ -6,4 +6,8 @@ using UnityEngine.Events;
 public class TaskGeneral : MonoBehaviour
 {
     public UnityEvent OnComplete;
+    public void SetComplete()
+    {
+        FindObjectOfType<PuzzleManager>().OnPuzzleDone();
+    }
 }

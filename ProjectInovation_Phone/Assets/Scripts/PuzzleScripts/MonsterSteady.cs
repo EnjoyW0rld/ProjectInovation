@@ -13,6 +13,8 @@ public class MonsterSteady : MonoBehaviour
     [Header("Speed variables")]
     [SerializeField] private float playerSpeed;
     [SerializeField] private float barSpeed;
+    [SerializeField] private float maxBarSpeed = 2f;
+
 
     [Header("Time variables")]
     [SerializeField] private float attackTime = 7;
@@ -47,7 +49,7 @@ public class MonsterSteady : MonoBehaviour
         targetObj.anchoredPosition = new Vector3(Mathf.Clamp(targetObj.anchoredPosition.x, -xMax, xMax), 0, 0);
 
         targetDir.x += Random.Range(-2f, 2f);
-        targetDir.x = Mathf.Clamp(targetDir.x, -2f, 2f);
+        targetDir.x = Mathf.Clamp(targetDir.x, -maxBarSpeed, maxBarSpeed);
 
         currentTimeOutside += Time.deltaTime;
         currentAttackTime -= Time.deltaTime;

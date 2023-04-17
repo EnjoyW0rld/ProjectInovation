@@ -47,8 +47,13 @@ public class RPC_commands : MonoBehaviour
     [PunRPC]
     private void MonsterAttack(int ID)
     {
+        print("is called!!!");
         if (puzzleManager == null) puzzleManager = FindObjectOfType<PuzzleManager>();
-        if (UserPrivateData.Instance.GetInstanceID() == ID) puzzleManager.SpawnMonster();
+        if (UserPrivateData.Instance.GetID() == ID)
+        {
+            print("Spawn monster");
+            puzzleManager.SpawnMonster();
+        }
         //print(UserPrivateData.Instance.GetID() + " current id");
 
     }
@@ -56,12 +61,14 @@ public class RPC_commands : MonoBehaviour
     private void DonePuzzle(int id)
     {
         if (puzzleManager == null) puzzleManager = FindObjectOfType<PuzzleManager>();
+        
         puzzleManager.PuzzleCompleteHandler(id);
     }
     [PunRPC]
     private void ChangeToLobby()
     {
-
+        if (puzzleManager == null) puzzleManager = FindObjectOfType<PuzzleManager>();
+        puzzleManager.ChangeToLobby();
     }
     [PunRPC]
     private void GameFinish(bool won)

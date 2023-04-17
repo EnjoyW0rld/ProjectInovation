@@ -131,9 +131,9 @@ MonoBehaviour:
   OnComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: DeleteSelected, Assembly-CSharp
-        m_MethodName: DestroyTarget
+      - m_Target: {fileID: 9127760234386124020}
+        m_TargetAssemblyTypeName: TaskGeneral, Assembly-CSharp
+        m_MethodName: SetComplete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
