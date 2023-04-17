@@ -211,7 +211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveObj: {fileID: 5805984212451530277}
   targetObj: {fileID: 5805984212668146753}
-  playerSpeed: 3
+  playerSpeed: 100
   barSpeed: 150
   attackTime: 7
   maxTimeOutside: 1

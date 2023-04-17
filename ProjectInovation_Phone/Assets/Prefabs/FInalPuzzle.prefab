@@ -854,7 +854,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  targetWord: word
+  targetWord: void
   inputField: {fileID: 3740863288387095401}
   inputButton: {fileID: 5006241098555365842}
   OnFail:

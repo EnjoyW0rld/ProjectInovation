@@ -9,6 +9,7 @@ public class UserPrivateData : MonoBehaviour
 
     private CharacterManager.Roles playerRole;
     private int id = -1;
+    private bool wonTheGame;
 
     void Awake()
     {
@@ -23,6 +24,7 @@ public class UserPrivateData : MonoBehaviour
         }
     }
 
+    public void SetWonState(bool won) => wonTheGame = won;
     public void SetRole(CharacterManager.Roles role)
     {
         playerRole = role;
@@ -30,6 +32,7 @@ public class UserPrivateData : MonoBehaviour
     public CharacterManager.Roles GetRole() => playerRole;
 
     public int GetID() => id;
+    public bool GetWonState() => wonTheGame;
 
     public void Initialize(int id)
     {

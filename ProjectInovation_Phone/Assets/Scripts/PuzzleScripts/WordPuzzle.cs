@@ -30,7 +30,8 @@ public class WordPuzzle : TaskGeneral
     }
     public void BackToMenu()
     {
-        Photon.Pun.PhotonNetwork.LoadLevel("Menu");
+        FindObjectOfType<PuzzleManager>().BroadcastFinish(true);
+        //Photon.Pun.PhotonNetwork.LoadLevel("Menu");
     }
 
 }

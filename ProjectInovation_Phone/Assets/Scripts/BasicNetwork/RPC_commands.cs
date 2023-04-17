@@ -63,5 +63,11 @@ public class RPC_commands : MonoBehaviour
     {
 
     }
+    [PunRPC]
+    private void GameFinish(bool won)
+    {
+        if (puzzleManager == null) puzzleManager = FindObjectOfType<PuzzleManager>();
+        puzzleManager.FinishTheGame(won);
+    }
 
 }

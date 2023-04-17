@@ -86,6 +86,19 @@ public class PuzzleManager : MonoBehaviour
         attack.OnFailed.AddListener(FailedMonsterAttack);
     }
 
+
+
+    public void BroadcastFinish(bool won)
+    {
+        view.RPC("GameFinish",RpcTarget.All, won);
+    }
+    //Set win state in singleton and change scene
+    public void FinishTheGame(bool won)
+    {
+        UserPrivateData.Instance.SetWonState(won);
+        if (PhotonNetwork.IsMasterClient) PhotonNetwork.LoadLevel("EndScreen");
+    }
+    //IMplement monster fail behaviour here
     private void FailedMonsterAttack()
     {
 
