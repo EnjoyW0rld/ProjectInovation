@@ -360,7 +360,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a33255f5b48bcd24683e2837d7a2cda3, type: 3}
   - {fileID: 21300000, guid: 8b86fd9f066c62f4aae48d9f8dbfa1df, type: 3}
   - {fileID: 21300000, guid: c5eee0fe706ad7947a3fe38c42bbe8c3, type: 3}
-  image: {fileID: 1842571467}
+  image: {fileID: 82969731}
 --- !u!1 &215454908
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,6 +418,7 @@ MonoBehaviour:
   OnReadyChanged:
     m_PersistentCalls:
       m_Calls: []
+  isReady: 0
 --- !u!1 &279493186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,6 +1379,7 @@ MonoBehaviour:
   OnReadyChanged:
     m_PersistentCalls:
       m_Calls: []
+  isReady: 0
 --- !u!1 &773831703
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,6 +1690,7 @@ MonoBehaviour:
   OnReadyChanged:
     m_PersistentCalls:
       m_Calls: []
+  isReady: 0
 --- !u!1 &825575326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2168,6 +2171,7 @@ MonoBehaviour:
   OnReadyChanged:
     m_PersistentCalls:
       m_Calls: []
+  isReady: 0
 --- !u!1 &1069871353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,9 +2846,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76383b0ed5bf15a4ba575dcc7f81e81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterSprites:
-  - {fileID: 11400000, guid: 7baf933f71f2c154dbdedd562c0a625e, type: 2}
-  - {fileID: 11400000, guid: 0fc590e61da14204fa9cfcc4ecfc4829, type: 2}
   image: {fileID: 466816830}
   OnSelected:
     m_PersistentCalls:
@@ -3902,7 +3903,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 319.04996, y: -139.9999}
+  m_AnchoredPosition: {x: 319.04993, y: -139.99988}
   m_SizeDelta: {x: 312.98, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1585613421

@@ -75,7 +75,7 @@ public class PuzzleManager : MonoBehaviour
                 else
                 {
                     print("this person id " + UserPrivateData.Instance.GetID());
-                    view.RPC("MonsterAttack", RpcTarget.All, 0);
+                    view.RPC("MonsterAttack", RpcTarget.All, Random.Range(0, 4));
                     timeTillMonsterAttack = timeBetweenAttacks;
                 }
             }
@@ -133,7 +133,7 @@ public class PuzzleManager : MonoBehaviour
         if (PhotonNetwork.IsMasterClient)
         {
             print("current puzzle count " + puzzlesDone);
-            if (puzzlesDone == 2)
+            if (puzzlesDone == 4)
             {
                 view.RPC("ChangeToLobby", RpcTarget.All);
                 //PhotonNetwork.LoadLevel("Menu");

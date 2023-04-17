@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Mechanic
   m_EditorClassIdentifier: 
   role: 3
-  _sprite: {fileID: 21300000, guid: 2a7b5bf0d084967488c6fd58ad35fcbc, type: 3}
+  _sprite: {fileID: 21300000, guid: b11bfa8b397ef5547af8545a04f86591, type: 3}

@@ -7,15 +7,17 @@ public class VibrationWrapper : MonoBehaviour
     [SerializeField, Tooltip("Use '.' and '-' only")] private string sequnce;
     [SerializeField] private Animator animator;
 
-    [SerializeField] private long shortLength = 400;
-    [SerializeField] private long longLength = 1000;
-    [SerializeField] private float breakBetweenVibrations = .2f;
-    [SerializeField] private float breakBetweenNumbers = 3f;
+    [SerializeField] private long shortLength;// = 400;
+    [SerializeField] private long longLength;// = 1000;
+    [SerializeField] private float breakBetweenVibrations;// = .2f;
+    [SerializeField] private float breakBetweenNumbers;// = 3f;
 
     private bool coroutinePlaying;
 
     private void Start()
     {
+        print(shortLength);
+        print(longLength);
         if (animator == null)
         {
             animator = FindObjectOfType<Animator>(true);
@@ -40,7 +42,7 @@ public class VibrationWrapper : MonoBehaviour
 
     IEnumerator PlaySound()
     {
-
+        print("play starts again");
         for (int i = 0; i < sequnce.Length; i++)
         {
             if (sequnce[i] == ' ')
@@ -50,8 +52,10 @@ public class VibrationWrapper : MonoBehaviour
             }
 
             float playTime = sequnce[i] == '.' ? shortLength : longLength;
+            print("playing length " + playTime);
             Vibration.Vibrate((long)playTime);
             StartCoroutine(PlayAnimation(playTime / 1000f));
+            print("starting break for " + breakBetweenVibrations + (playTime / 1000));
             yield return new WaitForSeconds(breakBetweenVibrations + (playTime / 1000));
         }
         yield return new WaitForSeconds(breakBetweenNumbers * 2);

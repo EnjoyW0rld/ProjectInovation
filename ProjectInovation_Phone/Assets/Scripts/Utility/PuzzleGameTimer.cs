@@ -36,7 +36,7 @@ public class PuzzleGameTimer : MonoBehaviour
     void Update()
     {
         timeLeft -= Time.deltaTime;
-        text.text = RoundToTwo(timeLeft).ToString() + "";
+        text.text = RoundToTwo(timeLeft/60f).ToString() + "";
         if (timeLeft <= 0)
         {
             if (Photon.Pun.PhotonNetwork.IsMasterClient)
@@ -47,7 +47,7 @@ public class PuzzleGameTimer : MonoBehaviour
     private float RoundToTwo(float val)
     {
         return ((int)(val * 100)) / 100.0f;
-        
+
     }
     public float GetTimeLeft() => timeLeft;
 

@@ -47,7 +47,7 @@ public class CharacterManager : MonoBehaviour
 
         if (roomManager.isRoleTaken(role))
         {
-            ScrollNext();
+            ScrollBack();
             return;
         }
         UpdateSprite();

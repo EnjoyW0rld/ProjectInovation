@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Analyst
   m_EditorClassIdentifier: 
   role: 2
-  _sprite: {fileID: 21300000, guid: b11bfa8b397ef5547af8545a04f86591, type: 3}
+  _sprite: {fileID: 21300000, guid: 749efba1966517b488ff9c5e3e5ab22c, type: 3}
