@@ -7,6 +7,7 @@ public class TVLight : MonoBehaviour
 {
     [SerializeField] private Sprite[] lights;
     [SerializeField] private Image image;
+    private int currentLight;
 
     [ContextMenu("FindImage")]
     private void FindImage()
@@ -17,6 +18,7 @@ public class TVLight : MonoBehaviour
     public void SetImage(int light)
     {
         image.sprite = lights[light];
+        currentLight = light;
     }
     
 

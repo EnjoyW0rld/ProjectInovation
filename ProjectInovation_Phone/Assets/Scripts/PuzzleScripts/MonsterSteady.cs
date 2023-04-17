@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class MonsterSteady : MonoBehaviour
 {
     [Header("Transforms")]
-    [SerializeField] private RectTransform moveObj;
+    [SerializeField] private RectTransform moveObj; //player
     [SerializeField] private RectTransform targetObj;
 
     [Header("Speed variables")]
@@ -41,15 +41,8 @@ public class MonsterSteady : MonoBehaviour
 
     void Update()
     {
-        float dirX = RoundToTwo(Input.acceleration.x);
-        moveObj.position += new Vector3(dirX * Time.deltaTime * playerSpeed, 0, 0);
-
-
-        targetObj.anchoredPosition += targetDir * Time.deltaTime * barSpeed;
-        targetObj.anchoredPosition = new Vector3(Mathf.Clamp(targetObj.anchoredPosition.x, -xMax, xMax), 0, 0);
-
-        targetDir.x += Random.Range(-2f, 2f);
-        targetDir.x = Mathf.Clamp(targetDir.x, -maxBarSpeed, maxBarSpeed);
+        MovePlayer();
+        MoveMarker();
 
         currentTimeOutside += Time.deltaTime;
         currentAttackTime -= Time.deltaTime;
@@ -71,6 +64,21 @@ public class MonsterSteady : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+    }
+
+    private void MoveMarker()
+    {
+        targetObj.anchoredPosition += targetDir * Time.deltaTime * barSpeed;
+        targetObj.anchoredPosition = new Vector3(Mathf.Clamp(targetObj.anchoredPosition.x, -xMax, xMax), 0, 0);
+
+        targetDir.x += Random.Range(-2f, 2f);
+        targetDir.x = Mathf.Clamp(targetDir.x, -maxBarSpeed, maxBarSpeed);
+
+    }
+    private void MovePlayer()
+    {
+        float dirX = RoundToTwo(Input.acceleration.x);
+        moveObj.position += new Vector3(dirX * Time.deltaTime * playerSpeed, 0, 0);
     }
 
     private float RoundToTwo(float value)

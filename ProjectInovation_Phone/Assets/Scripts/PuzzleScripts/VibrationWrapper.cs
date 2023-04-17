@@ -16,13 +16,10 @@ public class VibrationWrapper : MonoBehaviour
 
     private void Start()
     {
-        print(shortLength);
-        print(longLength);
         if (animator == null)
         {
             animator = FindObjectOfType<Animator>(true);
-        }//print("animtor is null in start!");
-        //Play();
+        }
     }
     private void Update()
     {
@@ -42,7 +39,6 @@ public class VibrationWrapper : MonoBehaviour
 
     IEnumerator PlaySound()
     {
-        print("play starts again");
         for (int i = 0; i < sequnce.Length; i++)
         {
             if (sequnce[i] == ' ')
@@ -52,10 +48,9 @@ public class VibrationWrapper : MonoBehaviour
             }
 
             float playTime = sequnce[i] == '.' ? shortLength : longLength;
-            print("playing length " + playTime);
             Vibration.Vibrate((long)playTime);
+
             StartCoroutine(PlayAnimation(playTime / 1000f));
-            print("starting break for " + breakBetweenVibrations + (playTime / 1000));
             yield return new WaitForSeconds(breakBetweenVibrations + (playTime / 1000));
         }
         yield return new WaitForSeconds(breakBetweenNumbers * 2);
