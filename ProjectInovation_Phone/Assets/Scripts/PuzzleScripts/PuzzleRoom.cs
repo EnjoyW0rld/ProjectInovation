@@ -10,5 +10,9 @@ public class PuzzleRoom : MonoBehaviour
     [SerializeField] private CharacterManager.Roles role;
     public UnityEvent OnComplete;
 
+    private void Start()
+    {
+        //FindObjectOfType<PuzzleManager>()
+    }
     public CharacterManager.Roles GetOwner() => role;
 }
