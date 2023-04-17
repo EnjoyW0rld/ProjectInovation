@@ -14,8 +14,21 @@ public class WordPuzzle : TaskGeneral
 
     private void Start()
     {
+        inputField.onValueChanged.AddListener(CheckRight);
         inputButton.onClick.AddListener(OnButtonPress);
         targetWord = targetWord.ToLower();
+    }
+
+    private void CheckRight(string text)
+    {
+        if (text.ToLower() == targetWord)
+        {
+            OnComplete?.Invoke();
+        }
+        else
+        {
+            OnFail?.Invoke();
+        }
     }
     private void OnButtonPress()
     {
